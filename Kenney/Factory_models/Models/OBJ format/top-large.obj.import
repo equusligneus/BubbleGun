@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfocifnuwptw4"
+path="res://.godot/imported/top-large.obj-08cfbb7e9e594af61705aa78dc694a1f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/top-large.obj-08cfbb7e9e594af61705aa78dc694a1f.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/top-large.obj"
+dest_files=["res://.godot/imported/top-large.obj-08cfbb7e9e594af61705aa78dc694a1f.mesh", "res://.godot/imported/top-large.obj-08cfbb7e9e594af61705aa78dc694a1f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

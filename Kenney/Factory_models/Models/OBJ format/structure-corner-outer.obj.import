@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bemcdg0ak2u7p"
+path="res://.godot/imported/structure-corner-outer.obj-f415555d01adf065237c8a70bdc5d3bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-corner-outer.obj-f415555d01adf065237c8a70bdc5d3bd.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/structure-corner-outer.obj"
+dest_files=["res://.godot/imported/structure-corner-outer.obj-f415555d01adf065237c8a70bdc5d3bd.mesh", "res://.godot/imported/structure-corner-outer.obj-f415555d01adf065237c8a70bdc5d3bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

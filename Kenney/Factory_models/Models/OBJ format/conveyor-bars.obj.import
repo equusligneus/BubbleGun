@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c62wwk2n2pw2h"
+path="res://.godot/imported/conveyor-bars.obj-07e73176f622fae6b4222be3ebf26373.mesh"
+
+[deps]
+
+files=["res://.godot/imported/conveyor-bars.obj-07e73176f622fae6b4222be3ebf26373.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/conveyor-bars.obj"
+dest_files=["res://.godot/imported/conveyor-bars.obj-07e73176f622fae6b4222be3ebf26373.mesh", "res://.godot/imported/conveyor-bars.obj-07e73176f622fae6b4222be3ebf26373.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

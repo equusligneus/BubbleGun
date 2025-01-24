@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b1d7xdddwlu7v"
+path="res://.godot/imported/cover-corner.obj-5e5c7c760007a52a73c4c923d34e63ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cover-corner.obj-5e5c7c760007a52a73c4c923d34e63ad.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/cover-corner.obj"
+dest_files=["res://.godot/imported/cover-corner.obj-5e5c7c760007a52a73c4c923d34e63ad.mesh", "res://.godot/imported/cover-corner.obj-5e5c7c760007a52a73c4c923d34e63ad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

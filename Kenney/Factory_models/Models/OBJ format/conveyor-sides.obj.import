@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ck8i0lwatmdaf"
+path="res://.godot/imported/conveyor-sides.obj-e27b041cdaf87bcf36b6f4565e14555b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/conveyor-sides.obj-e27b041cdaf87bcf36b6f4565e14555b.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/conveyor-sides.obj"
+dest_files=["res://.godot/imported/conveyor-sides.obj-e27b041cdaf87bcf36b6f4565e14555b.mesh", "res://.godot/imported/conveyor-sides.obj-e27b041cdaf87bcf36b6f4565e14555b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

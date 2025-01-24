@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqvcsyo0k4m6x"
+path="res://.godot/imported/box-wide.obj-fa2c9e6bbf94aca2485077ab6ba7b61d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/box-wide.obj-fa2c9e6bbf94aca2485077ab6ba7b61d.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/box-wide.obj"
+dest_files=["res://.godot/imported/box-wide.obj-fa2c9e6bbf94aca2485077ab6ba7b61d.mesh", "res://.godot/imported/box-wide.obj-fa2c9e6bbf94aca2485077ab6ba7b61d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

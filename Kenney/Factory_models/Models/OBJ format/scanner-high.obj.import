@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr2ojwo5xmbs3"
+path="res://.godot/imported/scanner-high.obj-62db8b14d7fe8368a3c7c66435942cff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/scanner-high.obj-62db8b14d7fe8368a3c7c66435942cff.mesh"]
+
+source_file="res://Kenney/Factory_models/Models/OBJ format/scanner-high.obj"
+dest_files=["res://.godot/imported/scanner-high.obj-62db8b14d7fe8368a3c7c66435942cff.mesh", "res://.godot/imported/scanner-high.obj-62db8b14d7fe8368a3c7c66435942cff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
