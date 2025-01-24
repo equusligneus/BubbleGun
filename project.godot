@@ -12,15 +12,15 @@ config_version=5
 
 config/name="Bubble Gun"
 config/tags=PackedStringArray("starterkit")
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/main2.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.92549, 0.92549, 0.960784, 1)
-boot_splash/image="res://splash-screen.png"
-config/icon="res://icon.png"
+boot_splash/image="res://Kenney/splash-screen.png"
+config/icon="res://Kenney/icon.png"
 
 [autoload]
 
-Audio="*res://scripts/audio.gd"
+Audio="*res://Kenney/scripts/audio.gd"
 
 [display]
 
