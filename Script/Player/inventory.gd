@@ -1,9 +1,15 @@
+class_name Inventory
 extends Node
 
 signal ammo_type_added(instance: AmmoInstance)
+signal ammo_selection_changed(index: int)
 
 var _ammunition : Array[AmmoInstance]
 var _ammo_index : int = -1
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("weapon_toggle"):	
+		select_next()
 
 func get_current() -> AmmoInstance:
 	return _ammunition[_ammo_index] if _ammo_index > -1 else null
@@ -35,3 +41,4 @@ func _select(direction: int):
 	while _ammunition[_ammo_index].get_amount() == 0 && _ammo_index != start_index:
 		_ammo_index = wrapi(_ammo_index + direction, 0, _ammunition.size())
 	
+	ammo_selection_changed.emit(_ammo_index)
