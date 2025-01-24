@@ -1,13 +1,13 @@
 class_name Bullet
-extends Node
+extends CharacterBody3D
+
+signal hit(body: Node3D)
 
 @export var speed := 5.0
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	pass
+	var collision := move_and_collide(Vector3.FORWARD * speed)
+	if is_instance_valid(collision):
+		hit.emit(collision.get_collider() as Node3D)
+		queue_free()
