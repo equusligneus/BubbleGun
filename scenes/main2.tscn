@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://cijp1xhj0kjye"]
+[gd_scene load_steps=12 format=3 uid="uid://d24gd7a1u5336"]
 
-[ext_resource type="Environment" uid="uid://jvmpkdwaeaq" path="res://Kenney/scenes/main-environment.tres" id="1_vnfm3"]
+[ext_resource type="Environment" uid="uid://cyb7rkgacak8j" path="res://Kenney/scenes/main-environment.tres" id="1_vnfm3"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://Kenney/objects/player.tscn" id="2_2lxa3"]
 [ext_resource type="Script" path="res://Kenney/scripts/hud.gd" id="3_m5s10"]
 [ext_resource type="FontFile" uid="uid://biqtga8moh7ah" path="res://Kenney/fonts/lilita_one_regular.ttf" id="4_pgcxa"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci5mmose01fp6"]
+
+[ext_resource type="PackedScene" uid="uid://d163450pag64q" path="res://Kenney/Factory_models/Models/GLB format/structure-corner-outer.glb" id="1_0giaf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gmv6y"]
+size = Vector3(2, 4, 2)
+
+[node name="structure-corner-outer2" instance=ExtResource("1_0giaf")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="structure-corner-outer" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="structure-corner-outer/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1.5, 0.5)
+shape = SubResource("BoxShape3D_gmv6y")

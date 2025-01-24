@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1sg5f0dyywgw"]
+
+[ext_resource type="PackedScene" uid="uid://cembbds65cj0c" path="res://Kenney/Factory_models/Models/GLB format/structure-corner-inner.glb" id="1_j8yi7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ka0ky"]
+size = Vector3(1.35693, 3.41925, 1)
+
+[node name="structure-corner-inner2" instance=ExtResource("1_j8yi7")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="structure-corner-inner" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="structure-corner-inner/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_ka0ky")
