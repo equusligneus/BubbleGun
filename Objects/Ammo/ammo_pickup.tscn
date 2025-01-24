@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj5ci0mov65qa"]
+
+[ext_resource type="Script" path="res://Script/Ammo/ammo_pickup.gd" id="1_jgwgu"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_npnra"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_sk6jg"]
+
+[node name="AmmoPickup" type="Area3D"]
+script = ExtResource("1_jgwgu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_npnra")
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D"]
+texture = SubResource("ImageTexture_sk6jg")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
