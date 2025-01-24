@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody3D
 
 @export_subgroup("Properties")
@@ -40,6 +41,7 @@ signal health_updated
 @onready var container = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
 @onready var sound_footsteps = $SoundFootsteps
 @onready var blaster_cooldown = $Cooldown
+@onready var _inventory : Inventory = $Inventory
 
 @export var crosshair:TextureRect
 
@@ -294,3 +296,6 @@ func damage(amount):
 	
 	if health < 0:
 		get_tree().reload_current_scene() # Reset when out of health
+
+func get_inventory() -> Inventory:
+	return _inventory

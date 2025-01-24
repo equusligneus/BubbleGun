@@ -14,7 +14,5 @@ func _process(delta: float) -> void:
 	_sprite.rotate(Vector3.UP, 15.0 * delta)
 
 func _on_body_entered(body: Node3D) -> void:
-	# check is player
-	# add ammo to inventory
-	
-	pass # Replace with function body.
+	if body is Player:
+		(body as Player).get_inventory().add_ammo(_type, _count)

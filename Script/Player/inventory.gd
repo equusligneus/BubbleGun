@@ -1,3 +1,4 @@
+class_name Inventory
 extends Node
 
 signal ammo_type_added(instance: AmmoInstance)
