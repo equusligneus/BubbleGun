@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3j6ootp2dj43"]
+
+[ext_resource type="PackedScene" uid="uid://bj5ci0mov65qa" path="res://objects/Ammo/ammo_pickup.tscn" id="1_qrsem"]
+[ext_resource type="Resource" uid="uid://ghbn03l4g4q3" path="res://objects/Ammo/ammo_type_gum.tres" id="2_wdeea"]
+
+[node name="AmmoPickup" instance=ExtResource("1_qrsem")]
+_type = ExtResource("2_wdeea")

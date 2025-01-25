@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="AmmoType" load_steps=3 format=3 uid="uid://0fbsry8impsf"]
-
-[ext_resource type="Texture2D" uid="uid://dret5x5j3srem" path="res://icon.svg" id="1_68qnk"]
-[ext_resource type="Script" path="res://Script/Ammo/ammo.gd" id="1_tbneo"]
-
-[resource]
-script = ExtResource("1_tbneo")
-_icon = ExtResource("1_68qnk")

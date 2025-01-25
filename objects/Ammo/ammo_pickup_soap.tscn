@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b27nct0836fce"]
 
 [ext_resource type="PackedScene" uid="uid://bj5ci0mov65qa" path="res://objects/Ammo/ammo_pickup.tscn" id="1_hnsly"]
-[ext_resource type="Resource" uid="uid://0fbsry8impsf" path="res://objects/Ammo/ammo_soap.tres" id="2_p63vo"]
+[ext_resource type="Resource" uid="uid://0fbsry8impsf" path="res://objects/Ammo/ammo_type_soap.tres" id="2_p63vo"]
 
-[node name="AmmoPickup" instance=ExtResource("1_hnsly")]
+[node name="AmmoPickup2" instance=ExtResource("1_hnsly")]
 _type = ExtResource("2_p63vo")
