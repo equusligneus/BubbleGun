@@ -7,6 +7,9 @@ signal ammo_selection_changed(index: int)
 var _ammunition : Array[AmmoInstance] = []
 var _ammo_index : int = -1
 
+func _init(parent: Node3D):
+	parent.add_child(self)
+
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("weapon_toggle"):
 		select_next()

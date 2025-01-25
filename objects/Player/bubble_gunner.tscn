@@ -1,11 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://u1ni1yeda6nt"]
+[gd_scene load_steps=8 format=3 uid="uid://u1ni1yeda6nt"]
 
 [ext_resource type="Script" path="res://Script/Player/player.gd" id="1_vp68s"]
 [ext_resource type="PackedScene" uid="uid://drl25hd7kaf2l" path="res://objects/UI/hud.tscn" id="2_5ttrk"]
 [ext_resource type="SpriteFrames" uid="uid://dbv3sy5qjatnl" path="res://Kenney/sprites/burst_animation.tres" id="2_pebsi"]
 [ext_resource type="Texture2D" uid="uid://8ggihh27mlrr" path="res://Kenney/sprites/blob_shadow.png" id="3_d1b5y"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://Kenney/sounds/walking.ogg" id="4_potor"]
-[ext_resource type="Script" path="res://Script/Player/inventory.gd" id="5_2yxng"]
 [ext_resource type="Script" path="res://Script/Player/gun.gd" id="6_heq7y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sehjx"]
@@ -16,8 +15,11 @@ collision_layer = 2
 collision_mask = 3
 floor_constant_speed = true
 script = ExtResource("1_vp68s")
+_movement_speed = null
 _acceleration = 15.0
 _jump_strength = 10.0
+_gravity = null
+_turn_rate = null
 hud_scene = ExtResource("2_5ttrk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -73,9 +75,6 @@ volume_db = -5.0
 
 [node name="Cooldown" type="Timer" parent="."]
 one_shot = true
-
-[node name="Inventory" type="Node" parent="."]
-script = ExtResource("5_2yxng")
 
 [node name="Gun" type="Node3D" parent="." node_paths=PackedStringArray("bullet_spawn_point")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218757, 1.11448, -0.520868)

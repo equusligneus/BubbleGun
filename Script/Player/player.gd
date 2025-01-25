@@ -39,7 +39,7 @@ signal health_updated
 @onready var container : Node3D = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
 @onready var sound_footsteps : AudioStreamPlayer = $SoundFootsteps
 @onready var blaster_cooldown : Timer = $Cooldown
-@onready var _inventory := Inventory.new()
+@onready var _inventory := Inventory.new(self)
 @onready var _gun : Gun = $Gun
 
 @export var crosshair:TextureRect
