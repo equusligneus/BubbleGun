@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7y4i00ilna1y"]
+[gd_scene load_steps=4 format=3 uid="uid://b7y4i00ilna1y"]
 
 [ext_resource type="PackedScene" uid="uid://g6g3h1vcmxl" path="res://Kenney/Factory_models/Models/GLB format/door-wide-closed.glb" id="1_nvb32"]
+[ext_resource type="Script" path="res://Kenney/Factory_models/obstacles/door.gd" id="2_p2nwo"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rl1ct"]
 size = Vector3(2, 2, 1)
 
 [node name="door-wide-closed2" instance=ExtResource("1_nvb32")]
+script = ExtResource("2_p2nwo")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="door-wide-closed" index="0"]
 
