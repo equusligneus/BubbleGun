@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://bqpo7ijnv6d1i"]
+[gd_scene load_steps=95 format=3 uid="uid://bqpo7ijnv6d1i"]
 
 [ext_resource type="PackedScene" uid="uid://dh7ffk4u7w6lh" path="res://Kenney/objects/platform_backup.tscn" id="1_0xx5d"]
 [ext_resource type="PackedScene" uid="uid://d0bhgju0kflun" path="res://Kenney/Factory_models/Models/GLB format/arrow-basic.glb" id="2_ue82y"]
@@ -28,11 +28,15 @@
 [ext_resource type="PackedScene" uid="uid://daeg4l0lv7tgn" path="res://Kenney/Factory_models/obstacles/box.tscn" id="14_pjdos"]
 [ext_resource type="PackedScene" uid="uid://deyw2loljj0qb" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe.glb" id="14_r8gsy"]
 [ext_resource type="PackedScene" uid="uid://clslpx2ndxygr" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars.glb" id="15_dd8mw"]
-[ext_resource type="PackedScene" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
+[ext_resource type="PackedScene" uid="uid://j66p7yknf748" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
+[ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="16_5vvgw"]
 [ext_resource type="PackedScene" uid="uid://cn4updfr4uy2c" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-sides.glb" id="16_rxgef"]
 [ext_resource type="PackedScene" uid="uid://nfdvsrkkrbj0" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe-sides.glb" id="17_8lye5"]
+[ext_resource type="PackedScene" uid="uid://c0ek6dm4l6o0k" path="res://objects/Ammo/ammo_pickup_air.tscn" id="17_krfi4"]
 [ext_resource type="PackedScene" uid="uid://pgrgki4u77f1" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe.glb" id="18_l7h4r"]
+[ext_resource type="PackedScene" uid="uid://bv61qxs0nfo7m" path="res://objects/Ammo/ammo_pickup_housing.tscn" id="18_por10"]
 [ext_resource type="PackedScene" uid="uid://dlw2si8if21br" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long.glb" id="19_i7bit"]
+[ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="19_yfw0b"]
 [ext_resource type="PackedScene" uid="uid://bttauavet8dtf" path="res://Kenney/Factory_models/Models/GLB format/conveyor-sides.glb" id="20_fvw0q"]
 [ext_resource type="PackedScene" uid="uid://bachtp12oq2gi" path="res://Kenney/Factory_models/Models/GLB format/conveyor-stripe-sides.glb" id="21_0quwx"]
 [ext_resource type="PackedScene" uid="uid://cb8stnensfo85" path="res://Kenney/Factory_models/Models/GLB format/conveyor-stripe.glb" id="22_jtmrr"]
@@ -6571,10 +6575,117 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0kvrt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 7, 46.5)
 shape = SubResource("BoxShape3D_lxnh0")
 
-[node name="Gameplay" type="Node3D" parent="Level"]
+[node name="Coins" type="Node3D" parent="Level"]
 
-[node name="Node3D" parent="Level/Gameplay" instance=ExtResource("15_etj4v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+[node name="Node3D" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 7)
+
+[node name="Node3D2" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 7)
+
+[node name="Node3D3" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, 7)
+
+[node name="Node3D4" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3, 7)
+
+[node name="Node3D5" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 7)
+
+[node name="Node3D6" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 3, 14)
+
+[node name="Node3D7" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 27)
+
+[node name="Node3D8" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 3, 32)
+
+[node name="Node3D9" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.5, 48)
+
+[node name="Node3D10" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 52)
+
+[node name="Node3D11" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 2.5, 56)
+
+[node name="Node3D12" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 62)
+
+[node name="Node3D13" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 62)
+
+[node name="Node3D14" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 56)
+
+[node name="Node3D15" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 3.5, 53)
+
+[node name="Node3D16" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 53)
+
+[node name="Node3D17" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 57)
+
+[node name="Node3D18" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 61)
+
+[node name="Node3D19" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 45)
+
+[node name="Node3D20" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 45)
+
+[node name="Node3D21" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 45)
+
+[node name="Node3D22" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 46)
+
+[node name="Node3D23" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 46)
+
+[node name="Node3D24" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 46)
+
+[node name="Node3D25" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 47)
+
+[node name="Node3D26" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 47)
+
+[node name="Node3D27" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 47)
+
+[node name="Node3D28" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 48)
+
+[node name="Node3D29" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 48)
+
+[node name="Node3D30" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 48)
+
+[node name="Ammo" type="Node3D" parent="Level"]
+
+[node name="AmmoPickup" parent="Level/Ammo" instance=ExtResource("16_5vvgw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1, 22)
+
+[node name="AmmoPickup2" parent="Level/Ammo" instance=ExtResource("17_krfi4")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, 1, 7)
+
+[node name="AmmoPickup3" parent="Level/Ammo" instance=ExtResource("17_krfi4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -16, 1, 53)
+
+[node name="AmmoPickup4" parent="Level/Ammo" instance=ExtResource("18_por10")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 1, 59)
+
+[node name="AmmoPickup5" parent="Level/Ammo" instance=ExtResource("19_yfw0b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17, 1, 7)
+
+[node name="AmmoPickup6" parent="Level/Ammo" instance=ExtResource("19_yfw0b")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16, 1, 50)
 
 [node name="Prefabs" type="Node3D" parent="."]
 
@@ -6610,87 +6721,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.96846, 0, -11.1861)
 
 [node name="box-small2" parent="Prefabs" instance=ExtResource("6_jptcy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.54932, 0, -17.9632)
-
-[node name="box-small3" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 7)
-
-[node name="box-small4" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 61)
-
-[node name="box-small21" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 57)
-
-[node name="box-small22" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 53)
-
-[node name="box-small23" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 3.5, 53)
-
-[node name="box-small24" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 56)
-
-[node name="box-small25" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 62)
-
-[node name="box-small26" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 62)
-
-[node name="box-small27" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 2.5, 56)
-
-[node name="box-small28" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 52)
-
-[node name="box-small29" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.5, 48)
-
-[node name="box-small5" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 45)
-
-[node name="box-small6" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 45)
-
-[node name="box-small7" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 45)
-
-[node name="box-small8" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 45)
-
-[node name="box-small9" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 46)
-
-[node name="box-small10" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 46)
-
-[node name="box-small11" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 46)
-
-[node name="box-small12" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 46)
-
-[node name="box-small13" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 47)
-
-[node name="box-small14" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 47)
-
-[node name="box-small15" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 47)
-
-[node name="box-small16" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 47)
-
-[node name="box-small17" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 48)
-
-[node name="box-small18" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 48)
-
-[node name="box-small19" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 48)
-
-[node name="box-small20" parent="Prefabs" instance=ExtResource("6_jptcy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 48)
 
 [node name="box-wide2" parent="Prefabs" instance=ExtResource("7_ujel3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.518, 0, -18.2426)
