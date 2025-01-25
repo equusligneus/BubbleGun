@@ -11,7 +11,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sehjx"]
 
 [node name="BubbleGunner" type="CharacterBody3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 collision_layer = 2
 collision_mask = 3
 floor_constant_speed = true
@@ -20,10 +20,11 @@ _acceleration = 15.0
 hud_scene = ExtResource("2_5ttrk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_sehjx")
 
 [node name="Head" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624131, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.624, 0)
 
 [node name="Camera" type="Camera3D" parent="Head"]
 
@@ -59,7 +60,7 @@ frame = 2
 target_position = Vector3(0, 0, -50)
 
 [node name="Shadow" type="Decal" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7, 0)
 size = Vector3(1, 2, 1)
 texture_albedo = ExtResource("3_d1b5y")
 modulate = Color(1, 1, 1, 0.705882)
@@ -76,5 +77,6 @@ one_shot = true
 script = ExtResource("5_2yxng")
 
 [node name="Gun" type="Node3D" parent="." node_paths=PackedStringArray("bullet_spawn_point")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218757, 1.11448, -0.520868)
 script = ExtResource("6_heq7y")
 bullet_spawn_point = NodePath(".")

@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://c0ynpcarqj2gb"]
 
-[ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="1_ivjri"]
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="3_qlih7"]
 [ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
 [ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="5_5wtbi"]
 [ext_resource type="PackedScene" uid="uid://bv61qxs0nfo7m" path="res://objects/Ammo/ammo_pickup_housing.tscn" id="6_0sy6n"]
+[ext_resource type="PackedScene" uid="uid://d31ffuavmdasl" path="res://objects/Player/player_spawn.tscn" id="6_ypr7f"]
 
 [node name="FredsTest" type="Node3D"]
 
@@ -30,10 +30,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.340655, 0.664317, 2.75686)
 [node name="AmmoPickup2" parent="." instance=ExtResource("5_5wtbi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9035, 0.532576, 1.27497)
 
-[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
-
 [node name="AmmoPickup3" parent="." instance=ExtResource("6_0sy6n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.72439, 0.582942, 1.74128)
+
+[node name="PlayerSpawn" parent="." instance=ExtResource("6_ypr7f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0397078, 0)
 
 [editable path="platform"]
 [editable path="platform2"]

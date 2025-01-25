@@ -28,7 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://daeg4l0lv7tgn" path="res://Kenney/Factory_models/obstacles/box.tscn" id="14_pjdos"]
 [ext_resource type="PackedScene" uid="uid://deyw2loljj0qb" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe.glb" id="14_r8gsy"]
 [ext_resource type="PackedScene" uid="uid://clslpx2ndxygr" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars.glb" id="15_dd8mw"]
-[ext_resource type="PackedScene" uid="uid://j66p7yknf748" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
+[ext_resource type="PackedScene" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
 [ext_resource type="PackedScene" uid="uid://cn4updfr4uy2c" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-sides.glb" id="16_rxgef"]
 [ext_resource type="PackedScene" uid="uid://nfdvsrkkrbj0" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe-sides.glb" id="17_8lye5"]
 [ext_resource type="PackedScene" uid="uid://pgrgki4u77f1" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe.glb" id="18_l7h4r"]
@@ -76,7 +76,7 @@
 [ext_resource type="PackedScene" uid="uid://0o2p167gr1ir" path="res://Kenney/Factory_models/Models/GLB format/top-large.glb" id="60_qhyqg"]
 [ext_resource type="PackedScene" uid="uid://bvsgbpdxy8xp1" path="res://Kenney/Factory_models/Models/GLB format/top.glb" id="61_eiefu"]
 [ext_resource type="Environment" uid="uid://cyb7rkgacak8j" path="res://Kenney/scenes/main-environment.tres" id="69_il048"]
-[ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="78_d177i"]
+[ext_resource type="PackedScene" uid="uid://d31ffuavmdasl" path="res://objects/Player/player_spawn.tscn" id="77_36tvl"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkgsb"]
 albedo_color = Color(0.00392157, 0, 1, 1)
@@ -6860,5 +6860,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4231, 0, -26.8937)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("69_il048")
 
-[node name="BubbleGunner" parent="." instance=ExtResource("78_d177i")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9, 2.00235, 7)
+[node name="PlayerSpawn" parent="." instance=ExtResource("77_36tvl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 9.18671, 0.25822, 6.99311)
