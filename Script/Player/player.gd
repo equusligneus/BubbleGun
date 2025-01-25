@@ -28,6 +28,8 @@ var container_offset = Vector3(1.2, -1.1, -2.75)
 
 var tween:Tween
 
+var hud: HUD;
+
 signal health_updated
 
 @onready var head : Node3D = $Head
@@ -50,7 +52,7 @@ func get_inventory() -> Inventory:
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_gun.init()
-	var hud : HUD = hud_scene.instantiate()
+	hud = hud_scene.instantiate()
 	hud.set_player(self)
 	add_child(hud)
 

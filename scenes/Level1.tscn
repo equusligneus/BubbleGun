@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://bqpo7ijnv6d1i"]
+[gd_scene load_steps=91 format=3 uid="uid://bqpo7ijnv6d1i"]
 
 [ext_resource type="PackedScene" uid="uid://dh7ffk4u7w6lh" path="res://Kenney/objects/platform_backup.tscn" id="1_0xx5d"]
 [ext_resource type="PackedScene" uid="uid://d0bhgju0kflun" path="res://Kenney/Factory_models/Models/GLB format/arrow-basic.glb" id="2_ue82y"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://daeg4l0lv7tgn" path="res://Kenney/Factory_models/obstacles/box.tscn" id="14_pjdos"]
 [ext_resource type="PackedScene" uid="uid://deyw2loljj0qb" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe.glb" id="14_r8gsy"]
 [ext_resource type="PackedScene" uid="uid://clslpx2ndxygr" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars.glb" id="15_dd8mw"]
+[ext_resource type="PackedScene" uid="uid://j66p7yknf748" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
 [ext_resource type="PackedScene" uid="uid://cn4updfr4uy2c" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-sides.glb" id="16_rxgef"]
 [ext_resource type="PackedScene" uid="uid://nfdvsrkkrbj0" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe-sides.glb" id="17_8lye5"]
 [ext_resource type="PackedScene" uid="uid://pgrgki4u77f1" path="res://Kenney/Factory_models/Models/GLB format/conveyor-long-stripe.glb" id="18_l7h4r"]
@@ -74,10 +75,8 @@
 [ext_resource type="PackedScene" uid="uid://dyf2vctaepqie" path="res://Kenney/Factory_models/Models/GLB format/structure-yellow-tall.glb" id="59_bexy2"]
 [ext_resource type="PackedScene" uid="uid://0o2p167gr1ir" path="res://Kenney/Factory_models/Models/GLB format/top-large.glb" id="60_qhyqg"]
 [ext_resource type="PackedScene" uid="uid://bvsgbpdxy8xp1" path="res://Kenney/Factory_models/Models/GLB format/top.glb" id="61_eiefu"]
-[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://Kenney/objects/player.tscn" id="62_hyi3m"]
-[ext_resource type="Script" path="res://Kenney/scripts/hud.gd" id="63_phg1t"]
-[ext_resource type="FontFile" uid="uid://biqtga8moh7ah" path="res://Kenney/fonts/lilita_one_regular.ttf" id="64_rjoda"]
 [ext_resource type="Environment" uid="uid://cyb7rkgacak8j" path="res://Kenney/scenes/main-environment.tres" id="69_il048"]
+[ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="78_d177i"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkgsb"]
 albedo_color = Color(0.00392157, 0, 1, 1)
@@ -126,12 +125,6 @@ font_size = 64
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lxnh0"]
 size = Vector3(69, 1, 94)
-
-[sub_resource type="LabelSettings" id="LabelSettings_xidp5"]
-font = ExtResource("64_rjoda")
-font_size = 36
-outline_size = 12
-outline_color = Color(0, 0, 0, 0.470588)
 
 [node name="Level1" type="Node3D"]
 
@@ -6578,6 +6571,11 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0kvrt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 7, 46.5)
 shape = SubResource("BoxShape3D_lxnh0")
 
+[node name="Gameplay" type="Node3D" parent="Level"]
+
+[node name="Node3D" parent="Level/Gameplay" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+
 [node name="Prefabs" type="Node3D" parent="."]
 
 [node name="arrow-basic2" parent="Prefabs" instance=ExtResource("2_ue82y")]
@@ -6618,6 +6616,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0, 7)
 
 [node name="box-small4" parent="Prefabs" instance=ExtResource("6_jptcy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 61)
+
+[node name="box-small21" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 57)
+
+[node name="box-small22" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 3.5, 53)
+
+[node name="box-small23" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 3.5, 53)
+
+[node name="box-small24" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 56)
+
+[node name="box-small25" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 1.5, 62)
+
+[node name="box-small26" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 62)
+
+[node name="box-small27" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 2.5, 56)
+
+[node name="box-small28" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.5, 52)
+
+[node name="box-small29" parent="Prefabs" instance=ExtResource("6_jptcy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0.5, 48)
 
 [node name="box-small5" parent="Prefabs" instance=ExtResource("6_jptcy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 45)
@@ -6832,38 +6857,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.905, 0, -18.3292)
 [node name="top2" parent="Prefabs" instance=ExtResource("61_eiefu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4231, 0, -26.8937)
 
-[node name="HUD" type="CanvasLayer" parent="."]
-script = ExtResource("63_phg1t")
-
-[node name="Crosshair" type="TextureRect" parent="HUD"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.35, 0.35)
-pivot_offset = Vector2(64, 64)
-
-[node name="Health" type="Label" parent="HUD"]
-offset_left = 48.0
-offset_top = 627.0
-offset_right = 138.0
-offset_bottom = 672.0
-size_flags_horizontal = 0
-size_flags_vertical = 8
-text = "100%"
-label_settings = SubResource("LabelSettings_xidp5")
-vertical_alignment = 2
-
-[node name="Player" parent="." node_paths=PackedStringArray("crosshair") instance=ExtResource("62_hyi3m")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 10.1637, 1.94681, 7.52796)
-crosshair = NodePath("../HUD/Crosshair")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("69_il048")
+
+[node name="BubbleGunner" parent="." instance=ExtResource("78_d177i")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 9, 2.00235, 7)

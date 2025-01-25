@@ -4,7 +4,6 @@
 [ext_resource type="ArrayMesh" uid="uid://dlnlp4brwnvg8" path="res://Kenney/Factory_models/Models/OBJ format/floor-large.obj" id="2_xgxql"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b6rnk"]
-friction = 0.0
 bounce = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_danpf"]

@@ -5,10 +5,15 @@ extends Control
 
 @export var ammo_container : HBoxContainer
 
+@export var score_container: HBoxContainer
+@export var score: int;
+@onready var score_hud: Label = $"Top Bar/ScoreContainer/Label2"
+
 func set_player(player: Gunner):
 	var inventory := player.get_inventory()
 	inventory.ammo_type_added.connect(_on_ammo_type_added)
 	inventory.ammo_selection_changed.connect(_on_ammo_type_selected)
+	
 
 func _on_ammo_type_added(ammo: AmmoInstance):
 	var counter : AmmoCounter = ammo_counter_scene.instantiate()
@@ -19,3 +24,7 @@ func _on_ammo_type_selected(index: int):
 	for item in ammo_container.get_child_count():
 		var counter : AmmoCounter = ammo_container.get_child(item)
 		counter.set_selected(index == item)
+
+func _on_score_increased(add: int):
+	score += add;
+	score_hud.text = str(score);
