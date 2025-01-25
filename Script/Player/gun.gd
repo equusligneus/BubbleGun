@@ -1,20 +1,22 @@
 class_name Gun
 extends Node
 
-@onready var raycast = $Head/Camera/RayCast
-@onready var muzzle = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Muzzle
-@onready var container = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
-@onready var sound_footsteps = $SoundFootsteps
-@onready var blaster_cooldown = $Cooldown
+var raycast: RayCast3D
+var muzzle: AnimatedSprite3D
+var container: Node3D
+var blaster_cooldown: Timer
 
 @export var crosshair:TextureRect
 
 var _inventory : Inventory
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	(get_parent() as Player)
-	pass # Replace with function body.
+func init() -> void:
+	var node = get_parent()
+	raycast = node.raycast
+	muzzle = node.muzzle
+	container = node.container
+	blaster_cooldown = node.blaster_cooldown
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

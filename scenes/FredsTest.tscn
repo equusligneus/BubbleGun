@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://c0ynpcarqj2gb"]
+[gd_scene load_steps=6 format=3 uid="uid://c0ynpcarqj2gb"]
 
 [ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="1_ivjri"]
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="3_qlih7"]
+[ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
+[ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="5_5wtbi"]
 
 [node name="FredsTest" type="Node3D"]
 
@@ -22,6 +24,12 @@ physics_material_override = ExtResource("3_qlih7")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.873933, -6.49407e-09, 0.486046, -0.105912, 0.97597, 0.190434, -0.474366, -0.217905, 0.852933, 0, 16.3282, 0)
+
+[node name="AmmoPickup" parent="." instance=ExtResource("4_m22vk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23583, 0.664317, 23.2834)
+
+[node name="AmmoPickup2" parent="." instance=ExtResource("5_5wtbi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1279, 0.532576, 16.9125)
 
 [editable path="platform"]
 [editable path="platform2"]

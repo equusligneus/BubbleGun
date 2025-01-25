@@ -33,14 +33,14 @@ var tween:Tween
 signal health_updated
 
 @onready var head : Node3D = $Head
-@onready var camera = $Head/Camera
-@onready var raycast = $Head/Camera/RayCast
-@onready var muzzle = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Muzzle
-@onready var container = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
-@onready var sound_footsteps = $SoundFootsteps
-@onready var blaster_cooldown = $Cooldown
+@onready var camera : Camera3D = $Head/Camera
+@onready var raycast : RayCast3D = $Head/Camera/RayCast
+@onready var muzzle : AnimatedSprite3D = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Muzzle
+@onready var container : Node3D = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
+@onready var sound_footsteps : AudioStreamPlayer = $SoundFootsteps
+@onready var blaster_cooldown : Timer = $Cooldown
 @onready var _inventory : Inventory = $Inventory
-var _gun : Gun
+@onready var _gun : Gun = $Gun
 
 @export var crosshair:TextureRect
 
@@ -51,6 +51,7 @@ func get_inventory() -> Inventory:
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	_gun.init()
 
 func _physics_process(delta):
 	
