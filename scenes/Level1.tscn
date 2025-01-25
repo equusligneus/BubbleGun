@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://bqpo7ijnv6d1i"]
+[gd_scene load_steps=98 format=3 uid="uid://bqpo7ijnv6d1i"]
 
 [ext_resource type="PackedScene" uid="uid://dh7ffk4u7w6lh" path="res://Kenney/objects/platform_backup.tscn" id="1_0xx5d"]
 [ext_resource type="PackedScene" uid="uid://d0bhgju0kflun" path="res://Kenney/Factory_models/Models/GLB format/arrow-basic.glb" id="2_ue82y"]
@@ -80,6 +80,7 @@
 [ext_resource type="PackedScene" uid="uid://bvsgbpdxy8xp1" path="res://Kenney/Factory_models/Models/GLB format/top.glb" id="61_eiefu"]
 [ext_resource type="Environment" uid="uid://cyb7rkgacak8j" path="res://Kenney/scenes/main-environment.tres" id="69_il048"]
 [ext_resource type="PackedScene" uid="uid://d31ffuavmdasl" path="res://objects/Player/player_spawn.tscn" id="77_36tvl"]
+[ext_resource type="PackedScene" uid="uid://cr2uuq0fe2ajk" path="res://audio/music.tscn" id="81_tf3ye"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pkgsb"]
 albedo_color = Color(0.00392157, 0, 1, 1)
@@ -7139,3 +7140,5 @@ environment = ExtResource("69_il048")
 
 [node name="PlayerSpawn" parent="." instance=ExtResource("77_36tvl")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.1867, 0.25822, 6.99311)
+
+[node name="Music" parent="." instance=ExtResource("81_tf3ye")]
