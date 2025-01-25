@@ -28,12 +28,14 @@ func add_ammo(type: AmmoType, amount: int):
 	for ammo in _ammunition:
 		if ammo.get_type() == type:
 			ammo.add(amount)
+			if get_current().is_empty():
+				select_next()
 			return
 	
 	var instance := AmmoInstance.new(type, amount)
 	_ammunition.push_back(instance)
 	ammo_type_added.emit(instance)
-	if _ammo_index < 0:
+	if _ammo_index < 0 || get_current().is_empty():
 		select_next()
 
 func _select(direction: int):
