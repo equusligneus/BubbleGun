@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ynpcarqj2gb"]
+
+[ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="1_ivjri"]
+[ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
+
+[node name="FredsTest" type="Node3D"]
+
+[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
+
+[node name="platform" parent="." instance=ExtResource("2_7u00o")]
+transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.785836, 0)
+
+[node name="StaticBody3D" parent="platform/platform-falling2" index="0"]
+physics_material_override = null
+
+[node name="platform2" parent="." instance=ExtResource("2_7u00o")]
+transform = Transform3D(48.459, 0.246356, 0, -12.3178, 0.969179, 0, 0, 0, 50, -18.4702, -0.785836, 0)
+
+[node name="StaticBody3D" parent="platform2/platform-falling2" index="0"]
+physics_material_override = null
+
+[editable path="platform"]
+[editable path="platform2"]

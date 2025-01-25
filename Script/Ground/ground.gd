@@ -24,9 +24,9 @@ func _init(character: CharacterBody3D):
 		
 		is_grounded = true
 		
-		var right := -(normal.cross(basis.z))
-		var forward := normal.cross(right)
+		var right := normal.cross(basis.z).normalized()
+		var forward := right.cross(normal).normalized()
 		basis = Basis(right, normal, forward)
 		var phys_mat := collider.physics_material_override
-		friction = phys_mat.friction
-		bounciness = phys_mat.bounce
+		friction = phys_mat.friction if phys_mat != null else 1.0
+		bounciness = phys_mat.bounce if phys_mat != null else 0.0
