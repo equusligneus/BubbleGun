@@ -9,22 +9,27 @@
 transparency = 1
 albedo_color = Color(0.262745, 1, 1, 0.290196)
 
-[node name="AmmoPickup" type="Area3D"]
+[node name="AmmoPickup" type="Area3D" node_paths=PackedStringArray("_timer")]
 collision_layer = 3
 collision_mask = 3
 script = ExtResource("1_jgwgu")
 _turn_speed = 0.5
+_timer = NodePath("Timer")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("SphereShape3D_npnra")
 
-[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D"]
-transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0, 0)
-texture = ExtResource("2_40cep")
-
-[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+[node name="Outline" type="CSGSphere3D" parent="."]
 radial_segments = 32
 rings = 16
 material = SubResource("StandardMaterial3D_pd1ob")
+
+[node name="Sprite" type="Sprite3D" parent="Outline"]
+transform = Transform3D(0.35, 0, 0, 0, 0.35, 0, 0, 0, 0.35, 0, 0, 0)
+texture = ExtResource("2_40cep")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

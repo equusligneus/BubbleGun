@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgj8kkugecj7e"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://baownnlojdnvu" path="res://Script/Bounce/physmat_bouncy.tres" id="1_bbhlu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j6qv4"]
+transparency = 1
+albedo_color = Color(1, 0.462745, 0.0941176, 0.698039)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_37pea"]
+height = 0.0346776
+radius = 2.01516
+
+[node name="BouncyFloor" type="StaticBody3D"]
+physics_material_override = ExtResource("1_bbhlu")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+radius = 2.0
+height = 0.05
+sides = 32
+material = SubResource("StandardMaterial3D_j6qv4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_37pea")
