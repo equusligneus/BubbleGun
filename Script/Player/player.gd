@@ -6,10 +6,11 @@ extends CharacterBody3D
 @export var _acceleration := 50.0
 @export var _jump_strength := 20.0
 @export var _gravity := -20.0
+@export var _bounce_threshold := -5.0
 
 @export var _turn_rate := 30.0
 
-var _ground : Ground
+@onready var _ground := Ground.new(self)
 @onready var _upwards := Vector3(0.0, _gravity, 0.0)
 var _ground_movement := Vector3()
 
@@ -95,10 +96,12 @@ func _handle_controls():
 # Handle gravity
 
 func _handle_gravity(delta: float):
-	_upwards.y = max(_upwards.y + _gravity * delta, _gravity)
+	_upwards.y = clamp(_upwards.y + _gravity * delta, _gravity, -2 * _gravity)
 	
 	if !Input.is_action_just_pressed("jump"): return
+	print("trying to jump")
 	if !_ground.is_grounded: return
+	print("actually jumping")
 	
 	Audio.play("sounds/jump_a.ogg, sounds/jump_b.ogg, sounds/jump_c.ogg")
 	_upwards.y = _jump_strength
@@ -112,24 +115,59 @@ func _handle_rotation(delta: float):
 	_rotation_input = Vector2()
 
 func _handle_movement(delta: float):
-	_ground = Ground.new(self)
-	
 	_calc_ground_movement(delta)
 	
-	velocity = _ground_movement
+	var was_on_ground := _ground.is_grounded
+	
+	_ground.reset(basis)
+
+	#if 
+	#_ground_movement +=
+	
+	var travel := _ground_movement
 	if !_ground.is_grounded || _upwards.y > 0.0:
-		velocity += _upwards
-	move_and_slide()
+		travel += _upwards
+	
+	travel *= delta
+	#if was_on_ground:
+		#var y_offset := 0.9 * absf(travel.y)
+		#move_and_collide(Vector3.UP * y_offset)
+		#if travel.y > 0.0:
+			#travel.y -= y_offset
+	
+	for i in 5:
+		var collision := move_and_collide(travel)
+		if !is_instance_valid(collision):
+			break
+		
+		var reflect_factor := 1.0
+		if _ground.is_valid_ground(collision):
+			_ground.reset(basis, collision)
+			if !was_on_ground && _upwards.y < _bounce_threshold:
+				reflect_factor += _ground.bounciness
+		else:
+			# do step raycast
+			# null upwards movement
+			_upwards.y = 0.0
+		
+		var normal := collision.get_normal()
+		travel -= collision.get_travel()
+		
+		travel += normal * normal.dot(-travel) * reflect_factor
+		_ground_movement += normal * normal.dot(-_ground_movement) * reflect_factor
+		_upwards.y += normal.dot(-_upwards) * reflect_factor
+	
+	if _upwards.y > 0.05:
+		_ground.reset(basis)
 
 func _calc_ground_movement(delta: float):
 	if !_ground.is_grounded:
 		return _upwards
 	
-	# apply braking
+	## apply braking
 	var accel_input := _project_on_ground(-_ground_movement)
-	#print("Decel %f, %f, %f" % [accel_input.x, accel_input.y, accel_input.z])
 	
-	# apply accelerating
+	## apply accelerating
 	var input := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	if input.length_squared() > 1.0:
 		input = input.normalized()
@@ -137,15 +175,12 @@ func _calc_ground_movement(delta: float):
 	accel_input.z += input.y * _movement_speed
 	
 	accel_input *= pow(_ground.friction, 2) * _acceleration
-	#print("Accel pre-slide %f, %f, %f" % [accel_input.x, accel_input.y, accel_input.z])
 	
-	# apply gravity slide
+	## apply gravity slide
 	if _upwards.y < 0.0:
 		var slide := _project_on_ground(_upwards) * pow((1.0 - _ground.friction), 2)
-		#print("Slide %f, %f, %f" % [slide.x, slide.y, slide.z])
 		accel_input += slide
-		
-	#print("Accel post-slide %f, %f, %f" % [accel_input.x, accel_input.y, accel_input.z])
+	
 	_ground_movement += transform.basis * accel_input * delta
 
 func _project_on_ground(vector: Vector3) -> Vector3:

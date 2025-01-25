@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://c0ynpcarqj2gb"]
+[gd_scene load_steps=8 format=3 uid="uid://c0ynpcarqj2gb"]
 
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
-[ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="3_qlih7"]
 [ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
 [ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="5_5wtbi"]
 [ext_resource type="PackedScene" uid="uid://bv61qxs0nfo7m" path="res://objects/Ammo/ammo_pickup_housing.tscn" id="6_0sy6n"]
 [ext_resource type="PackedScene" uid="uid://d31ffuavmdasl" path="res://objects/Player/player_spawn.tscn" id="6_ypr7f"]
+[ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://Kenney/objects/platform_large_grass.tscn" id="7_gyvjl"]
+[ext_resource type="PackedScene" uid="uid://c0ek6dm4l6o0k" path="res://objects/Ammo/ammo_pickup_air.tscn" id="7_skmt8"]
 
 [node name="FredsTest" type="Node3D"]
 
@@ -14,12 +15,6 @@ transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.785836, 0)
 
 [node name="StaticBody3D" parent="platform/platform-falling2" index="0"]
 physics_material_override = null
-
-[node name="platform2" parent="." instance=ExtResource("2_7u00o")]
-transform = Transform3D(48.459, 0.246356, 0, -12.3178, 0.969179, 0, 0, 0, 50, -18.4702, -0.785836, 0)
-
-[node name="StaticBody3D" parent="platform2/platform-falling2" index="0"]
-physics_material_override = ExtResource("3_qlih7")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.873933, -6.49407e-09, 0.486046, -0.105912, 0.97597, 0.190434, -0.474366, -0.217905, 0.852933, 0, 16.3282, 0)
@@ -36,5 +31,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.72439, 0.582942, 1.74128)
 [node name="PlayerSpawn" parent="." instance=ExtResource("6_ypr7f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0397078, 0)
 
+[node name="AmmoPickup4" parent="." instance=ExtResource("7_skmt8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.42333, 0.673182, 0.63471)
+
+[node name="platform-large-grass" parent="." instance=ExtResource("7_gyvjl")]
+transform = Transform3D(4.53154, 0.422618, 0, -2.11309, 0.906308, 0, 0, 0, 1, -30.5934, 0, -5.048)
+
+[node name="platform-large-grass3" parent="." instance=ExtResource("7_gyvjl")]
+transform = Transform3D(3.53553, 0.707107, 0, -3.53553, 0.707107, 0, 0, 0, 1, -30.5934, 0, 5.36857)
+
+[node name="platform-large-grass4" parent="." instance=ExtResource("7_gyvjl")]
+transform = Transform3D(2.86788, 0.819152, 0, -4.09576, 0.573576, 0, 0, 0, 1, -30.5934, 0, 10.4659)
+
+[node name="platform-large-grass2" parent="." instance=ExtResource("7_gyvjl")]
+transform = Transform3D(4.09576, 0.573576, 0, -2.86788, 0.819152, 0, 0, 0, 1, -30.447, 0, 0.210354)
+
 [editable path="platform"]
-[editable path="platform2"]

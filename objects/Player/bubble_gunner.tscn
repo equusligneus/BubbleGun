@@ -15,11 +15,9 @@ collision_layer = 2
 collision_mask = 3
 floor_constant_speed = true
 script = ExtResource("1_vp68s")
-_movement_speed = null
 _acceleration = 15.0
 _jump_strength = 10.0
-_gravity = null
-_turn_rate = null
+_gravity = -30.0
 hud_scene = ExtResource("2_5ttrk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
