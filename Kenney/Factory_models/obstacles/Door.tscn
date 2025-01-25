@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7y4i00ilna1y"]
+
+[ext_resource type="PackedScene" uid="uid://g6g3h1vcmxl" path="res://Kenney/Factory_models/Models/GLB format/door-wide-closed.glb" id="1_nvb32"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rl1ct"]
+size = Vector3(2, 2, 1)
+
+[node name="door-wide-closed2" instance=ExtResource("1_nvb32")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="door-wide-closed" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="door-wide-closed/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_rl1ct")

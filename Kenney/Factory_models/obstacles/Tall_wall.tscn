@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcyimvmxwuc8a"]
+
+[ext_resource type="PackedScene" uid="uid://dyf2vctaepqie" path="res://Kenney/Factory_models/Models/GLB format/structure-yellow-tall.glb" id="1_oo7k1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_txni5"]
+size = Vector3(1, 2, 1)
+
+[node name="structure-yellow-tall2" instance=ExtResource("1_oo7k1")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="structure-yellow-tall" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="structure-yellow-tall/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_txni5")

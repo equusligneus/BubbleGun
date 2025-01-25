@@ -1,7 +1,7 @@
-[gd_resource type="Environment" load_steps=5 format=3 uid="uid://cyb7rkgacak8j"]
+[gd_resource type="Environment" load_steps=5 format=3 uid="uid://be0p6i3rtex7n"]
 
 [sub_resource type="Gradient" id="Gradient_tio4a"]
-colors = PackedColorArray(0.502973, 0.579188, 0.292454, 1, 0.315871, 0.421528, 0.674528, 1)
+colors = PackedColorArray(0.591319, 0.47222, 0.770854, 1, 0.315871, 0.421528, 0.674528, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_4e6px"]
 gradient = SubResource("Gradient_tio4a")
@@ -16,7 +16,7 @@ radiance_size = 0
 
 [resource]
 background_mode = 2
-background_color = Color(0.239779, 0.361726, 0.725981, 1)
+background_color = Color(0.360784, 0.392157, 0.462745, 1)
 sky = SubResource("Sky_7bk1c")
 ambient_light_source = 2
 ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
