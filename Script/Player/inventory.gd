@@ -4,11 +4,11 @@ extends Node
 signal ammo_type_added(instance: AmmoInstance)
 signal ammo_selection_changed(index: int)
 
-var _ammunition : Array[AmmoInstance]
+var _ammunition : Array[AmmoInstance] = []
 var _ammo_index : int = -1
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("weapon_toggle"):	
+	if Input.is_action_just_pressed("weapon_toggle"):
 		select_next()
 
 func get_current() -> AmmoInstance:
