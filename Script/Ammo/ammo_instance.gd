@@ -1,6 +1,8 @@
 class_name AmmoInstance
 extends RefCounted
 
+signal ammo_count_changed(amount: int)
+
 var _amount : int
 var _ammo: AmmoType
 
@@ -13,10 +15,16 @@ func get_type() -> AmmoType:
 
 func add(amount: int):
 	_amount += amount
+	ammo_count_changed.emit(_amount)
 
 func get_amount() -> int:
 	return _amount
+	
+func is_empty():
+	return _amount == 0
 
-func shoot(position, direction):
+func spawn_bullet() -> Bullet:
+	if is_empty(): return null
 	_amount -= 1
-	pass
+	ammo_count_changed.emit(_amount)
+	return _ammo.get_bullet()

@@ -8,8 +8,6 @@
 
 [node name="FredsTest" type="Node3D"]
 
-[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
-
 [node name="platform" parent="." instance=ExtResource("2_7u00o")]
 transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.785836, 0)
 
@@ -26,10 +24,12 @@ physics_material_override = ExtResource("3_qlih7")
 transform = Transform3D(0.873933, -6.49407e-09, 0.486046, -0.105912, 0.97597, 0.190434, -0.474366, -0.217905, 0.852933, 0, 16.3282, 0)
 
 [node name="AmmoPickup" parent="." instance=ExtResource("4_m22vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23583, 0.664317, 23.2834)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.340655, 0.664317, 2.75686)
 
 [node name="AmmoPickup2" parent="." instance=ExtResource("5_5wtbi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1279, 0.532576, 16.9125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9035, 0.532576, 1.27497)
+
+[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
 
 [editable path="platform"]
 [editable path="platform2"]

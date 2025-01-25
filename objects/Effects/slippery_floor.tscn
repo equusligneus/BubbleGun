@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://m3f30ltcjbv1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fey7r"]
+transparency = 1
+albedo_color = Color(0.647059, 1, 1, 0.698039)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_37pea"]
+height = 0.0346776
+radius = 2.01516
+
+[node name="SlipperyFloor" type="StaticBody3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+radius = 2.0
+height = 0.05
+sides = 32
+material = SubResource("StandardMaterial3D_fey7r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_37pea")

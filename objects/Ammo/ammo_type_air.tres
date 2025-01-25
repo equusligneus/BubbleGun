@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="AmmoType" load_steps=3 format=3 uid="uid://de44hs1b5gekt"]
+[gd_resource type="Resource" script_class="AmmoType" load_steps=4 format=3 uid="uid://de44hs1b5gekt"]
 
+[ext_resource type="PackedScene" uid="uid://cy2458ryil5c4" path="res://objects/bullets/bullet_air.tscn" id="1_3fowj"]
 [ext_resource type="Texture2D" uid="uid://dret5x5j3srem" path="res://icon.svg" id="1_xry6a"]
 [ext_resource type="Script" path="res://Script/Ammo/ammo.gd" id="2_nljau"]
 
 [resource]
 script = ExtResource("2_nljau")
+_bullet = ExtResource("1_3fowj")
 _icon = ExtResource("1_xry6a")
