@@ -1,14 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://c0ynpcarqj2gb"]
+[gd_scene load_steps=7 format=3 uid="uid://c0ynpcarqj2gb"]
 
 [ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="1_ivjri"]
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="3_qlih7"]
 [ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
 [ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="5_5wtbi"]
+[ext_resource type="PackedScene" uid="uid://bv61qxs0nfo7m" path="res://objects/Ammo/ammo_pickup_housing.tscn" id="6_0sy6n"]
 
 [node name="FredsTest" type="Node3D"]
-
-[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
 
 [node name="platform" parent="." instance=ExtResource("2_7u00o")]
 transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.785836, 0)
@@ -26,10 +25,15 @@ physics_material_override = ExtResource("3_qlih7")
 transform = Transform3D(0.873933, -6.49407e-09, 0.486046, -0.105912, 0.97597, 0.190434, -0.474366, -0.217905, 0.852933, 0, 16.3282, 0)
 
 [node name="AmmoPickup" parent="." instance=ExtResource("4_m22vk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23583, 0.664317, 23.2834)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.340655, 0.664317, 2.75686)
 
 [node name="AmmoPickup2" parent="." instance=ExtResource("5_5wtbi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1279, 0.532576, 16.9125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9035, 0.532576, 1.27497)
+
+[node name="BubbleGunner" parent="." instance=ExtResource("1_ivjri")]
+
+[node name="AmmoPickup3" parent="." instance=ExtResource("6_0sy6n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.72439, 0.582942, 1.74128)
 
 [editable path="platform"]
 [editable path="platform2"]

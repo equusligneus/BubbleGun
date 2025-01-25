@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://u1ni1yeda6nt"]
+[gd_scene load_steps=9 format=3 uid="uid://u1ni1yeda6nt"]
 
 [ext_resource type="Script" path="res://Script/Player/player.gd" id="1_vp68s"]
+[ext_resource type="PackedScene" uid="uid://drl25hd7kaf2l" path="res://objects/UI/hud.tscn" id="2_5ttrk"]
 [ext_resource type="SpriteFrames" uid="uid://dbv3sy5qjatnl" path="res://Kenney/sprites/burst_animation.tres" id="2_pebsi"]
 [ext_resource type="Texture2D" uid="uid://8ggihh27mlrr" path="res://Kenney/sprites/blob_shadow.png" id="3_d1b5y"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://Kenney/sounds/walking.ogg" id="4_potor"]
@@ -11,9 +12,12 @@
 
 [node name="BubbleGunner" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 2
+collision_mask = 3
 floor_constant_speed = true
 script = ExtResource("1_vp68s")
 _acceleration = 15.0
+hud_scene = ExtResource("2_5ttrk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_sehjx")
@@ -21,9 +25,9 @@ shape = SubResource("CapsuleShape3D_sehjx")
 [node name="Head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.624131, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Head"]
+[node name="Camera" type="Camera3D" parent="Head"]
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera3D"]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -31,30 +35,28 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="Head/Camera3D/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="Head/Camera/SubViewportContainer"]
 transparent_bg = true
 handle_input_locally = false
 msaa_3d = 1
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
 
-[node name="CameraItem" type="Camera3D" parent="Head/Camera3D/SubViewportContainer/SubViewport"]
+[node name="CameraItem" type="Camera3D" parent="Head/Camera/SubViewportContainer/SubViewport"]
 cull_mask = 1047554
 fov = 40.0
 
-[node name="Container" type="Node3D" parent="Head/Camera3D/SubViewportContainer/SubViewport/CameraItem"]
+[node name="Container" type="Node3D" parent="Head/Camera/SubViewportContainer/SubViewport/CameraItem"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, -1, -2.25)
 
-[node name="Muzzle" type="AnimatedSprite3D" parent="Head/Camera3D/SubViewportContainer/SubViewport/CameraItem"]
+[node name="Muzzle" type="AnimatedSprite3D" parent="Head/Camera/SubViewportContainer/SubViewport/CameraItem"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.75, -6)
 layers = 2
 sprite_frames = ExtResource("2_pebsi")
 frame = 2
 
-[node name="RayCast" type="RayCast3D" parent="Head"]
-exclude_parent = false
-target_position = Vector3(0, 0, -10)
-collide_with_areas = true
+[node name="RayCast" type="RayCast3D" parent="Head/Camera"]
+target_position = Vector3(0, 0, -50)
 
 [node name="Shadow" type="Decal" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4, 0)
@@ -73,5 +75,6 @@ one_shot = true
 [node name="Inventory" type="Node" parent="."]
 script = ExtResource("5_2yxng")
 
-[node name="Gun" type="Node3D" parent="."]
+[node name="Gun" type="Node3D" parent="." node_paths=PackedStringArray("bullet_spawn_point")]
 script = ExtResource("6_heq7y")
+bullet_spawn_point = NodePath(".")

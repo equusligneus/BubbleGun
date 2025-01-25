@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyllg6o8mcnrb"]
+
+[ext_resource type="PackedScene" uid="uid://5hibtpi5ux6y" path="res://objects/bullets/bullet.tscn" id="1_6flu5"]
+[ext_resource type="Script" path="res://Script/Bullets/create_floor_effect.gd" id="2_h6rx3"]
+[ext_resource type="PackedScene" uid="uid://m3f30ltcjbv1" path="res://objects/Effects/slippery_floor.tscn" id="3_735pl"]
+
+[node name="Bullet" instance=ExtResource("1_6flu5")]
+
+[node name="Soap" type="Node" parent="." index="2"]
+script = ExtResource("2_h6rx3")
+_effect = ExtResource("3_735pl")
+
+[connection signal="hit" from="." to="Soap" method="_on_hit"]

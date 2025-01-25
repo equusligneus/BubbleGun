@@ -1,6 +1,7 @@
+class_name Gunner
 extends CharacterBody3D
 
-@export_subgroup("Properties")
+@export_subgroup("Movement")
 @export var _movement_speed := 5.0
 @export var _acceleration := 50.0
 @export var _jump_strength := 20.0
@@ -12,19 +13,16 @@ var _ground : Ground
 @onready var _upwards := Vector3(0.0, _gravity, 0.0)
 var _ground_movement := Vector3()
 
+@export var hud_scene : PackedScene
+
 var mouse_sensitivity = 700
 var gamepad_sensitivity := 0.075
 
 var mouse_captured := true
 
-var movement_velocity: Vector3
-
 var _rotation_input := Vector2()
 
 var previously_floored := false
-
-var jump_single := true
-var jump_double := true
 
 var container_offset = Vector3(1.2, -1.1, -2.75)
 
@@ -39,7 +37,7 @@ signal health_updated
 @onready var container : Node3D = $Head/Camera/SubViewportContainer/SubViewport/CameraItem/Container
 @onready var sound_footsteps : AudioStreamPlayer = $SoundFootsteps
 @onready var blaster_cooldown : Timer = $Cooldown
-@onready var _inventory : Inventory = $Inventory
+@onready var _inventory := Inventory.new()
 @onready var _gun : Gun = $Gun
 
 @export var crosshair:TextureRect
@@ -52,6 +50,9 @@ func get_inventory() -> Inventory:
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_gun.init()
+	var hud : HUD = hud_scene.instantiate()
+	hud.set_player(self)
+	add_child(hud)
 
 func _physics_process(delta):
 	
@@ -63,39 +64,8 @@ func _physics_process(delta):
 	
 	_handle_movement(delta)
 	
-	print("Velocity x %f, y %f, z %f" % [velocity.x, velocity.y, velocity.z])
-	
-	
-	
-	#
-	## Movement
-	## Rotation
-	#
-	#camera.rotation.z = lerp_angle(camera.rotation.z, -input_mouse.x * 25 * delta, delta * 5)	
-	#
-	#camera.rotation.x = lerp_angle(camera.rotation.x, rotation_target.x, delta * 25)
-	#rotation.y = lerp_angle(rotation.y, rotation_target.y, delta * 25)
-	#
-	#container.position = lerp(container.position, container_offset - (basis.inverse() * applied_velocity / 30), delta * 10)
-	#
-	## Movement sound
-	#
-	#sound_footsteps.stream_paused = true
-	#
-	#if is_on_floor():
-		#if abs(velocity.x) > 1 or abs(velocity.z) > 1:
-			#sound_footsteps.stream_paused = false
-	#
-	## Landing after jump or falling
-	#
-	#camera.position.y = lerp(camera.position.y, 0.0, delta * 5)
-	#
-	#if is_on_floor() and gravity > 1 and !previously_floored: # Landed
-		#Audio.play("sounds/land.ogg")
-		#camera.position.y = -0.1
-	#
-	#previously_floored = is_on_floor()
-	
+	#print("Velocity x %f, y %f, z %f" % [velocity.x, velocity.y, velocity.z])
+
 	# Falling/respawning
 	
 	if position.y < -10:
@@ -124,54 +94,12 @@ func _handle_controls():
 
 func _handle_gravity(delta: float):
 	_upwards.y = max(_upwards.y + _gravity * delta, _gravity)
-	if _upwards.length_squared() > 0 and is_on_floor():
-		jump_single = true
 	
 	if !Input.is_action_just_pressed("jump"): return
-	if !jump_single && !jump_double: return
+	if !_ground.is_grounded: return
 	
 	Audio.play("sounds/jump_a.ogg, sounds/jump_b.ogg, sounds/jump_c.ogg")
 	_upwards.y = _jump_strength
-	jump_double = jump_single
-	jump_single = false
-
-#func initiate_change_weapon(index):
-	#
-	#weapon_index = index
-	#
-	#tween = get_tree().create_tween()
-	#tween.set_ease(Tween.EASE_OUT_IN)
-	#tween.tween_property(container, "position", container_offset - Vector3(0, 1, 0), 0.1)
-	#tween.tween_callback(change_weapon) # Changes the model
-
-# Switches the weapon model (off-screen)
-
-#func change_weapon():
-	#
-	#weapon = weapons[weapon_index]
-#
-	## Step 1. Remove previous weapon model(s) from container
-	#
-	#for n in container.get_children():
-		#container.remove_child(n)
-	#
-	## Step 2. Place new weapon model in container
-	#
-	#var weapon_model = weapon.model.instantiate()
-	#container.add_child(weapon_model)
-	#
-	#weapon_model.position = weapon.position
-	#weapon_model.rotation_degrees = weapon.rotation
-	#
-	## Step 3. Set model to only render on layer 2 (the weapon camera)
-	#
-	#for child in weapon_model.find_children("*", "MeshInstance3D"):
-		#child.layers = 2
-		#
-	## Set weapon data
-	#
-	#raycast.target_position = Vector3(0, 0, -1) * weapon.max_distance
-	#crosshair.texture = weapon.crosshair
 
 func _handle_rotation(delta: float):
 	var turn := _turn_rate * delta
