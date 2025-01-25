@@ -24,7 +24,7 @@ func init() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	
-	if !Input.is_action_pressed("shoot"): return
+	if !Input.is_action_just_pressed("shoot"): return
 	
 	if !blaster_cooldown.is_stopped(): return # Cooldown for shooting
 	
@@ -49,8 +49,6 @@ func _physics_process(delta: float) -> void:
 	
 	if ammo.get_amount() == 0:
 		_inventory.select_next()
-	
-	pass
 	
 func create_basis(forward: Vector3) -> Basis:
 	var right := Vector3.UP.cross(forward).normalized()
