@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cr2uuq0fe2ajk"]
+
+[ext_resource type="AudioStream" uid="uid://dwn7htamrky2" path="res://audio/NKM-G-30-31-115808515-0-2415-104-104-4-2896-51-0-39-513-5-140-27-142-63-308-36-541-578.wav" id="1_6s8uv"]
+
+[node name="Music" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_6s8uv")
+volume_db = -8.0
+autoplay = true
