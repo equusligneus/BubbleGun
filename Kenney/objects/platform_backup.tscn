@@ -2,9 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bwgwd5ue8i2bt" path="res://Kenney/models/platform.glb" id="1_67rm5"]
 [ext_resource type="ArrayMesh" uid="uid://dlnlp4brwnvg8" path="res://Kenney/Factory_models/Models/OBJ format/floor-large.obj" id="2_xgxql"]
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_b6rnk"]
-bounce = 1.0
+[ext_resource type="PhysicsMaterial" uid="uid://dueg4uih3kb5f" path="res://Script/Ground/physmat_ground.tres" id="3_y74vm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_danpf"]
 size = Vector3(2, 0.2, 2)
@@ -15,7 +13,7 @@ size = Vector3(2, 0.2, 2)
 mesh = ExtResource("2_xgxql")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="platform-falling2" index="0"]
-physics_material_override = SubResource("PhysicsMaterial_b6rnk")
+physics_material_override = ExtResource("3_y74vm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="platform-falling2/StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0969238, 0, 0)
