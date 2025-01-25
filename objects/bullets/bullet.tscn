@@ -5,9 +5,10 @@
 [sub_resource type="SphereShape3D" id="SphereShape3D_6ou7u"]
 
 [node name="Bullet" type="CharacterBody3D"]
+physics_interpolation_mode = 1
 collision_layer = 4
 script = ExtResource("1_tr861")
-speed = 0.05
+speed = 25.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

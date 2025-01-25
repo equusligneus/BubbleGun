@@ -7,7 +7,7 @@ signal hit(collision: KinematicCollision3D)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	var collision := move_and_collide(transform.basis * Vector3.FORWARD * speed)
+	var collision := move_and_collide(transform.basis * Vector3.FORWARD * speed * delta)
 	if is_instance_valid(collision):
 		hit.emit(collision)
 		queue_free()
