@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c0ynpcarqj2gb"]
+[gd_scene load_steps=10 format=3 uid="uid://c0ynpcarqj2gb"]
 
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
 [ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://d31ffuavmdasl" path="res://objects/Player/player_spawn.tscn" id="6_ypr7f"]
 [ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://Kenney/objects/platform_large_grass.tscn" id="7_gyvjl"]
 [ext_resource type="PackedScene" uid="uid://c0ek6dm4l6o0k" path="res://objects/Ammo/ammo_pickup_air.tscn" id="7_skmt8"]
+[ext_resource type="PackedScene" uid="uid://cr6d3x1iwo3lf" path="res://objects/obstacles/real_estate.tscn" id="8_twa04"]
+[ext_resource type="PackedScene" uid="uid://7pjd6svul4ab" path="res://Kenney/Factory_models/obstacles/Enemy.tscn" id="9_82vw6"]
 
 [node name="FredsTest" type="Node3D"]
 
@@ -45,5 +47,11 @@ transform = Transform3D(2.86788, 0.819152, 0, -4.09576, 0.573576, 0, 0, 0, 1, -3
 
 [node name="platform-large-grass2" parent="." instance=ExtResource("7_gyvjl")]
 transform = Transform3D(4.09576, 0.573576, 0, -2.86788, 0.819152, 0, 0, 0, 1, -30.447, 0, 0.210354)
+
+[node name="RealEstate" parent="." instance=ExtResource("8_twa04")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.6105, 0.464171, -4.25719)
+
+[node name="Enemy" parent="." instance=ExtResource("9_82vw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.79949, 0.17621, -4.36876)
 
 [editable path="platform"]
