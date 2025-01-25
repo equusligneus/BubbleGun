@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://m3f30ltcjbv1"]
+[gd_scene load_steps=5 format=3 uid="uid://m3f30ltcjbv1"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="1_jk07y"]
+[ext_resource type="Script" path="res://Script/Effects/remove_effect.gd" id="2_muwwk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fey7r"]
 transparency = 1
@@ -12,6 +13,7 @@ radius = 2.01516
 
 [node name="SlipperyFloor" type="StaticBody3D"]
 physics_material_override = ExtResource("1_jk07y")
+script = ExtResource("2_muwwk")
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
 radius = 2.0
