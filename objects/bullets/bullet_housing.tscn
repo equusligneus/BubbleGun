@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://bxisqekoxhuxd"]
+[gd_scene load_steps=3 format=3 uid="uid://bxisqekoxhuxd"]
 
 [ext_resource type="PackedScene" uid="uid://5hibtpi5ux6y" path="res://objects/bullets/bullet.tscn" id="1_qjkoq"]
-[ext_resource type="Script" path="res://Script/Bullets/create_floor_effect.gd" id="2_43533"]
-[ext_resource type="PackedScene" uid="uid://m3f30ltcjbv1" path="res://objects/Effects/slippery_floor.tscn" id="3_bmpme"]
+[ext_resource type="Script" path="res://Script/Bullets/destroy_real_estate.gd" id="2_i8sg3"]
 
 [node name="Bullet" instance=ExtResource("1_qjkoq")]
 
-[node name="Soap" type="Node" parent="." index="2"]
-script = ExtResource("2_43533")
-_effect = ExtResource("3_bmpme")
+[node name="GoldmanSachs" type="Node" parent="." index="2"]
+script = ExtResource("2_i8sg3")
 
-[connection signal="hit" from="." to="Soap" method="_on_hit"]
+[connection signal="hit" from="." to="GoldmanSachs" method="_on_hit"]
