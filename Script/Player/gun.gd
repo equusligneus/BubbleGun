@@ -9,20 +9,21 @@ var blaster_cooldown: Timer
 @export var _cooldown := 0.1
 @export var bullet_spawn_point : Node3D
 
-
+var _gunner: Gunner
 var _inventory : Inventory
 
 # Called when the node enters the scene tree for the first time.
 func init() -> void:
-	var node := get_parent() as Gunner
-	raycast = node.raycast
-	muzzle = node.muzzle
-	container = node.container
-	blaster_cooldown = node.blaster_cooldown
-	_inventory = node.get_inventory()
+	_gunner = get_parent() as Gunner
+	raycast = _gunner.raycast
+	muzzle = _gunner.muzzle
+	container = _gunner.container
+	blaster_cooldown = _gunner.blaster_cooldown
+	_inventory = _gunner.get_inventory()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
+	if _gunner.get_menu().is_open(): return
 	
 	if !Input.is_action_just_pressed("shoot"): return
 	

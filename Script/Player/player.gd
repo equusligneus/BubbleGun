@@ -15,19 +15,13 @@ extends CharacterBody3D
 var _ground_movement := Vector3()
 
 @export var hud_scene : PackedScene
+@export var menu_scene: PackedScene
 
 var mouse_sensitivity = 700
 var gamepad_sensitivity := 0.075
 
-var mouse_captured := true
-
 var _rotation_input := Vector2()
 
-var previously_floored := false
-
-var container_offset = Vector3(1.2, -1.1, -2.75)
-
-var tween:Tween
 
 var hud: HUD;
 
@@ -45,53 +39,45 @@ signal health_updated
 
 @export var crosshair:TextureRect
 
+var _menu : IngameMenu
 
 # Functions
 func get_inventory() -> Inventory:
 	return _inventory
 
+func get_menu() -> IngameMenu:
+	return _menu
+
 func _ready():
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_gun.init()
 	hud = hud_scene.instantiate()
 	hud.set_player(self)
-	add_child(hud)
+	
+	_menu = menu_scene.instantiate()
+	_menu.set_player(self)
 
 func _physics_process(delta):
+	if _menu.is_open(): return
 	
-	# Handle functions
-	
+	# Handle functions	
 	_handle_controls()
 	_handle_gravity(delta)
 	_handle_rotation(delta)
-	
 	_handle_movement(delta)
 	
-	#print("Velocity x %f, y %f, z %f" % [velocity.x, velocity.y, velocity.z])
-
 	# Falling/respawning
-	
 	if position.y < -10:
 		get_tree().reload_current_scene()
 
 # Mouse movement
 
 func _input(event):
-	if event is InputEventMouseMotion and mouse_captured:
+	if event is InputEventMouseMotion and !_menu.is_open():
 		_rotation_input -= event.relative / mouse_sensitivity
 
 func _handle_controls():
-	## Mouse capture
-	if Input.is_action_just_pressed("mouse_capture"):
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		mouse_captured = true
-	
-	if Input.is_action_just_pressed("mouse_capture_exit"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-		mouse_captured = false
-	
 	## Rotation
-	_rotation_input += Input.get_vector("camera_right", "camera_left", "camera_down", "camera_up")
+	_rotation_input += Input.get_vector("camera_right", "camera_left", "camera_down", "camera_up") * gamepad_sensitivity
 
 # Handle gravity
 
@@ -120,9 +106,6 @@ func _handle_movement(delta: float):
 	var was_on_ground := _ground.is_grounded
 	
 	_ground.reset(basis)
-
-	#if 
-	#_ground_movement +=
 	
 	var travel := _ground_movement
 	if !_ground.is_grounded || _upwards.y > 0.0:

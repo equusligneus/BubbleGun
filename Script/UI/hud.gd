@@ -13,6 +13,7 @@ func set_player(player: Gunner):
 	var inventory := player.get_inventory()
 	inventory.ammo_type_added.connect(_on_ammo_type_added)
 	inventory.ammo_selection_changed.connect(_on_ammo_type_selected)
+	player.add_child(self)
 	
 
 func _on_ammo_type_added(ammo: AmmoInstance):
