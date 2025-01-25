@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://caqm34w816usk"]
 
 [ext_resource type="PackedScene" uid="uid://5hibtpi5ux6y" path="res://objects/bullets/bullet.tscn" id="1_iv3wg"]
-[ext_resource type="Script" path="res://Script/Bullets/remove_enemy.gd" id="2_4yobv"]
+[ext_resource type="Script" path="res://Script/Bullets/destroy_human.gd" id="2_4yobv"]
 
 [node name="Bullet" instance=ExtResource("1_iv3wg")]
 
