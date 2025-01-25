@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d31ffuavmdasl"]
+
+[ext_resource type="Script" path="res://Script/Player/spawn_point.gd" id="1_v53js"]
+[ext_resource type="PackedScene" uid="uid://u1ni1yeda6nt" path="res://objects/Player/bubble_gunner.tscn" id="2_3crxu"]
+
+[node name="PlayerSpawn" type="Node3D"]
+script = ExtResource("1_v53js")
+scene = ExtResource("2_3crxu")
