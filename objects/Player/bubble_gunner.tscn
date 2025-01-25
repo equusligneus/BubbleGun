@@ -32,6 +32,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.624, 0)
 [node name="Camera" type="Camera3D" parent="Head"]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Head/Camera"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -44,7 +45,7 @@ transparent_bg = true
 handle_input_locally = false
 msaa_3d = 1
 size = Vector2i(1280, 720)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="CameraItem" type="Camera3D" parent="Head/Camera/SubViewportContainer/SubViewport"]
 cull_mask = 1047554
