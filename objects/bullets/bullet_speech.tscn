@@ -1,13 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://caqm34w816usk"]
+[gd_scene load_steps=3 format=3 uid="uid://caqm34w816usk"]
 
 [ext_resource type="PackedScene" uid="uid://5hibtpi5ux6y" path="res://objects/bullets/bullet.tscn" id="1_iv3wg"]
-[ext_resource type="Script" path="res://Script/Bullets/create_floor_effect.gd" id="2_1fy7t"]
-[ext_resource type="PackedScene" uid="uid://m3f30ltcjbv1" path="res://objects/Effects/slippery_floor.tscn" id="3_126wv"]
+[ext_resource type="Script" path="res://Script/Bullets/remove_enemy.gd" id="2_4yobv"]
 
 [node name="Bullet" instance=ExtResource("1_iv3wg")]
 
-[node name="Soap" type="Node" parent="." index="2"]
-script = ExtResource("2_1fy7t")
-_effect = ExtResource("3_126wv")
+[node name="HateSpeech" type="Node" parent="." index="2"]
+script = ExtResource("2_4yobv")
 
-[connection signal="hit" from="." to="Soap" method="_on_hit"]
+[connection signal="hit" from="." to="HateSpeech" method="_on_hit"]

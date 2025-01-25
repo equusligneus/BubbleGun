@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=4 uid="uid://by850dqm7ss7k"]
+[gd_scene load_steps=12 format=4 uid="uid://7pjd6svul4ab"]
 
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_07dur"]
+[ext_resource type="Script" path="res://Script/obstacles/human.gd" id="1_8afak"]
 [ext_resource type="Texture2D" uid="uid://b5hxnjwvrxuji" path="res://Kenney/models/Textures/colormap.png" id="2_sk53e"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_5eh5y"]
@@ -89,7 +90,12 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_6cm8t")
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_616a0"]
+radius = 0.778247
+
+[node name="Node3D" type="StaticBody3D"]
+collision_mask = 0
+script = ExtResource("1_8afak")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.3, 0)
@@ -97,10 +103,10 @@ mesh = SubResource("SphereMesh_5eh5y")
 surface_material_override/0 = SubResource("ShaderMaterial_drjg6")
 
 [node name="root" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02375, 9.02389e-17)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.282254, 9.02389e-17)
 
 [node name="torso" type="MeshInstance3D" parent="root"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.80478e-15, -0.02375, -0.02375)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.80478e-15, -0.325001, -0.02375)
 mesh = SubResource("ArrayMesh_yu5g8")
 skeleton = NodePath("")
 
@@ -108,3 +114,7 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
 mesh = SubResource("ArrayMesh_7rnj3")
 skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.321631, 0)
+shape = SubResource("SphereShape3D_616a0")
