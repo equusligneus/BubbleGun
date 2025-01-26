@@ -160,6 +160,7 @@ size = Vector3(15, 1, 10)
 
 [node name="Level1" type="Node3D"]
 script = ExtResource("1_8lo8e")
+seconds = 20
 
 [node name="Level" type="Node3D" parent="."]
 

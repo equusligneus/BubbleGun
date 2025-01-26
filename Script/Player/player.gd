@@ -51,6 +51,9 @@ func get_inventory() -> Inventory:
 func get_menu() -> IngameMenu:
 	return _menu
 
+func get_end_menu() -> EndgameMenu:
+	return _end_menu
+
 func _ready():
 	_gun.init()
 	hud = hud_scene.instantiate()

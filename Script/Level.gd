@@ -25,3 +25,4 @@ func set_player(node: Gunner):
 	
 func _on_timer_timeout():
 	player._end_menu._set_visible(true);
+	timer.stop()

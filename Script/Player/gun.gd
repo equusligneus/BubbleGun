@@ -24,6 +24,7 @@ func init() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	if _gunner.get_menu().is_open(): return
+	if _gunner.get_end_menu().is_open(): return
 	
 	if !Input.is_action_just_pressed("shoot"): return
 	
