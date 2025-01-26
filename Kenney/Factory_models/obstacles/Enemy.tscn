@@ -1,8 +1,10 @@
-[gd_scene load_steps=12 format=4 uid="uid://7pjd6svul4ab"]
+[gd_scene load_steps=14 format=4 uid="uid://7pjd6svul4ab"]
 
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_07dur"]
 [ext_resource type="Script" path="res://Script/obstacles/human.gd" id="1_8afak"]
 [ext_resource type="Texture2D" uid="uid://b5hxnjwvrxuji" path="res://Kenney/models/Textures/colormap.png" id="2_sk53e"]
+[ext_resource type="Script" path="res://Script/Effects/effect_tumble.gd" id="4_j5u7b"]
+[ext_resource type="Script" path="res://Script/Effects/effect_shrink.gd" id="5_mjiiu"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_5eh5y"]
 
@@ -118,3 +120,11 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.321631, 0)
 shape = SubResource("SphereShape3D_616a0")
+
+[node name="Tumblr" type="Node" parent="." node_paths=PackedStringArray("_target")]
+script = ExtResource("4_j5u7b")
+_target = NodePath("../root")
+
+[node name="Shrinkage" type="Node" parent="." node_paths=PackedStringArray("_target")]
+script = ExtResource("5_mjiiu")
+_target = NodePath("../root")
