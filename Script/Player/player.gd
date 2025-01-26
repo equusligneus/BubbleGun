@@ -28,8 +28,6 @@ var _rotation_input := Vector2()
 
 var hud: HUD;
 
-signal health_updated
-
 @onready var head : Node3D = $Head
 @onready var camera : Camera3D = $Head/Camera
 @onready var raycast : RayCast3D = $Head/Camera/RayCast

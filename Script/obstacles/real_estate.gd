@@ -1,12 +1,13 @@
 class_name RealEstate
-extends Node3D
+extends Obstacle
 
-var _tween : Tween
-@onready var houses : Node3D = $root 
+var _destroyed := false
+@export var _demolition_duration := 1.5
 
 func destroy():
-	if is_instance_valid(_tween): return
-	
-	_tween = create_tween()
-	_tween.tween_property(houses, "position", Vector3.DOWN * 2, 0.75).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_CUBIC)
-	_tween.tween_callback(func(): queue_free())
+	if _destroyed: return
+	_destroyed = true
+	got_hit.emit()
+	var tween := create_tween()
+	tween.tween_interval(_demolition_duration)
+	tween.tween_callback(func(): queue_free())
