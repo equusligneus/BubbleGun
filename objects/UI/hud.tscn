@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Script/UI/hud.gd" id="1_3v68m"]
 [ext_resource type="PackedScene" uid="uid://bwe4qclinho2y" path="res://objects/UI/ammo_counter.tscn" id="2_1c45f"]
-[ext_resource type="Texture2D" uid="uid://2jld33y6h5pq" path="res://Kenney/sprites/crosshair.png" id="3_gslum"]
+[ext_resource type="Texture2D" uid="uid://72kw328oedsj" path="res://art/gun/crosshair.png" id="3_h0wrj"]
 
 [node name="Hud" type="Control" node_paths=PackedStringArray("ammo_container")]
 layout_mode = 3
@@ -78,6 +78,7 @@ layout_mode = 2
 text = "90"
 
 [node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -90,5 +91,5 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_gslum")
+texture = ExtResource("3_h0wrj")
 expand_mode = 1
