@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cr6d3x1iwo3lf"]
+[gd_scene load_steps=11 format=3 uid="uid://cr6d3x1iwo3lf"]
 
 [ext_resource type="Script" path="res://Script/obstacles/real_estate.gd" id="1_l4ubf"]
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_xh1b8"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Script/Effects/effect_disable_collider.gd" id="4_k88re"]
 [ext_resource type="Script" path="res://Script/Effects/effect_shrink.gd" id="5_04osb"]
 [ext_resource type="Script" path="res://Script/Effects/effect_move_in_random_direction.gd" id="6_us6p2"]
+[ext_resource type="Script" path="res://Script/Effects/effect_turn_invisible.gd" id="7_d3het"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jtkvx"]
 
@@ -48,3 +49,7 @@ _targets = [NodePath("../root")]
 [node name="Explode" type="Node" parent="." node_paths=PackedStringArray("_targets")]
 script = ExtResource("6_us6p2")
 _targets = [NodePath("../root")]
+
+[node name="Node" type="Node" parent="." node_paths=PackedStringArray("_targets")]
+script = ExtResource("7_d3het")
+_targets = [NodePath("../Bubble")]
