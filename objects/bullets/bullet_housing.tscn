@@ -8,4 +8,7 @@
 [node name="GoldmanSachs" type="Node" parent="." index="2"]
 script = ExtResource("2_i8sg3")
 
+[node name="Impact" parent="." index="3"]
+sound_effect = "audio/sfx/bubble_money.wav"
+
 [connection signal="hit" from="." to="GoldmanSachs" method="_on_hit"]
