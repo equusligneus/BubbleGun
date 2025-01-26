@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=3 uid="uid://bqpo7ijnv6d1i"]
+[gd_scene load_steps=104 format=3 uid="uid://bqpo7ijnv6d1i"]
 
 [ext_resource type="PackedScene" uid="uid://dh7ffk4u7w6lh" path="res://Kenney/objects/platform_backup.tscn" id="1_0xx5d"]
 [ext_resource type="Script" path="res://Script/Level.gd" id="1_8lo8e"]
@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://bap2hncgs1sk4" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe-high.glb" id="12_blrp0"]
 [ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://Kenney/objects/platform_large_grass.tscn" id="12_rmmij"]
 [ext_resource type="PackedScene" uid="uid://chmgk6q4eupvg" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe-side.glb" id="13_58f55"]
-[ext_resource type="PackedScene" uid="uid://daeg4l0lv7tgn" path="res://Kenney/Factory_models/obstacles/box.tscn" id="14_pjdos"]
+[ext_resource type="PackedScene" uid="uid://cr6d3x1iwo3lf" path="res://objects/obstacles/real_estate.tscn" id="14_3ce3e"]
 [ext_resource type="PackedScene" uid="uid://deyw2loljj0qb" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars-stripe.glb" id="14_r8gsy"]
 [ext_resource type="PackedScene" uid="uid://clslpx2ndxygr" path="res://Kenney/Factory_models/Models/GLB format/conveyor-bars.glb" id="15_dd8mw"]
 [ext_resource type="PackedScene" uid="uid://j66p7yknf748" path="res://Kenney/Factory_models/obstacles/Coin.tscn" id="15_etj4v"]
@@ -117,7 +117,22 @@ albedo_color = Color(0, 1, 0, 1)
 
 [sub_resource type="TextMesh" id="TextMesh_0xbhl"]
 material = SubResource("StandardMaterial3D_lxhtw")
-text = "DIY Bouncy house"
+text = "Bouncy house"
+font_size = 64
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2508j"]
+
+[sub_resource type="TextMesh" id="TextMesh_dm4mb"]
+material = SubResource("StandardMaterial3D_2508j")
+text = "Talk to people"
+font_size = 64
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mulij"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_ekna3"]
+material = SubResource("StandardMaterial3D_mulij")
+text = "Housing Bubble"
 font_size = 64
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_58ovn"]
@@ -6269,6 +6284,51 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -23, 0
 [node name="Node3D" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 0.5, 25)
 
+[node name="Node3D5" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 0.5, 50)
+
+[node name="Node3D6" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 1.5, 53)
+
+[node name="Node3D7" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 2.5, 56)
+
+[node name="Node3D8" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 1.5, 62)
+
+[node name="Node3D9" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 3.5, 64)
+
+[node name="Node3D10" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 1.5, 68)
+
+[node name="Node3D14" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 1.5, 71)
+
+[node name="Node3D12" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -29, 1.5, 68)
+
+[node name="Node3D19" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -28, 0.5, 71)
+
+[node name="Node3D15" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -29, 2.5, 72)
+
+[node name="Node3D11" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -21, 1.5, 68)
+
+[node name="Node3D16" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -20, 3.5, 69)
+
+[node name="Node3D17" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -24, 3.5, 71)
+
+[node name="Node3D18" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -32, 3.5, 70)
+
+[node name="Node3D13" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -21, 1.5, 71)
+
 [node name="Node3D2" parent="Level/Obstacles/Room3" instance=ExtResource("11_74j0d")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -25, 0.5, 37)
 
@@ -7356,152 +7416,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 51)
 [node name="structure-yellow-tall28" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 52)
 
-[node name="cover-corner2" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.5, 0, 52.5)
-
-[node name="cover-corner3" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 0, 50.5)
-
-[node name="cover-corner4" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 0, 50.5)
-
-[node name="cover-corner5" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 0, 50.5)
-
-[node name="cover-corner6" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0, 50.5)
-
-[node name="cover-corner7" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0, 52.5)
-
-[node name="cover-corner8" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0, 54.5)
-
-[node name="cover-corner9" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0, 56.5)
-
-[node name="cover-corner10" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0, 58.5)
-
-[node name="cover-corner11" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 0, 58.5)
-
-[node name="cover-corner12" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 0, 58.5)
-
-[node name="cover-corner13" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 0, 58.5)
-
-[node name="cover-corner14" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 0, 58.5)
-
-[node name="cover-corner15" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 0, 56.5)
-
-[node name="cover-corner16" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 0, 54.5)
-
-[node name="cover-corner17" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 0, 52.5)
-
-[node name="cover-corner18" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 0, 50.5)
-
-[node name="cover-corner19" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 2, 50.5)
-
-[node name="cover-corner20" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 2, 50.5)
-
-[node name="cover-corner21" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 2, 50.5)
-
-[node name="cover-corner22" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 2, 50.5)
-
-[node name="cover-corner23" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 2, 52.5)
-
-[node name="cover-corner24" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 2, 54.5)
-
-[node name="cover-corner25" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 2, 56.5)
-
-[node name="cover-corner26" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 2, 58.5)
-
-[node name="cover-corner27" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 2, 58.5)
-
-[node name="cover-corner28" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 2, 58.5)
-
-[node name="cover-corner29" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 2, 58.5)
-
-[node name="cover-corner30" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 2, 58.5)
-
-[node name="cover-corner31" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 2, 56.5)
-
-[node name="cover-corner32" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 2, 54.5)
-
-[node name="cover-corner33" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 2, 52.5)
-
-[node name="cover-corner34" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 2, 50.5)
-
-[node name="cover-corner35" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 4, 52.5)
-
-[node name="cover-corner36" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 4, 52.5)
-
-[node name="cover-corner37" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 4, 52.5)
-
-[node name="cover-corner38" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 6, 54.5)
-
-[node name="cover-corner39" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 4, 52.5)
-
-[node name="cover-corner40" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 4, 54.5)
-
-[node name="cover-corner41" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 4, 56.5)
-
-[node name="cover-corner43" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.5, 4, 56.5)
-
-[node name="cover-corner44" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 4, 56.5)
-
-[node name="cover-corner45" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 4, 56.5)
-
-[node name="cover-corner46" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17.5, 6, 54.5)
-
-[node name="cover-corner47" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 4, 56.5)
-
-[node name="cover-corner48" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 4, 54.5)
-
-[node name="cover-corner49" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19.5, 4, 52.5)
-
-[node name="cover-corner50" parent="Level/Obstacles/Room4" instance=ExtResource("14_pjdos")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.5, 6, 54.5)
-
 [node name="Text5" type="Node3D" parent="Level/Obstacles/Room4"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -46.5, 8, 79)
+transform = Transform3D(0.866025, 0, 0.5, 0, 1, 0, -0.5, 0, 0.866025, -35.5, -2, 41)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text5"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 7)
@@ -7509,6 +7425,34 @@ mesh = SubResource("TextMesh_0xbhl")
 skeleton = NodePath("../../../Room2")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text5"]
+transform = Transform3D(0.231589, 0, 0, 0, 1, 0, 0, 0, 4.64916, -0.199997, 5, 7)
+mesh = SubResource("BoxMesh_p0g8u")
+skeleton = NodePath("../../../Room2")
+surface_material_override/0 = SubResource("StandardMaterial3D_0kvrt")
+
+[node name="Text6" type="Node3D" parent="Level/Obstacles/Room4"]
+transform = Transform3D(-8.9407e-08, 0, 1, 0, 1, 0, -1, 0, -8.9407e-08, -32.5, -2, 46.5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text6"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 7)
+mesh = SubResource("TextMesh_dm4mb")
+skeleton = NodePath("../../../Room2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text6"]
+transform = Transform3D(0.2, 0, 0, 0, 1, 0, 0, 0, 6.4, -0.199997, 5, 7)
+mesh = SubResource("BoxMesh_p0g8u")
+skeleton = NodePath("../../../Room2")
+surface_material_override/0 = SubResource("StandardMaterial3D_0kvrt")
+
+[node name="Text7" type="Node3D" parent="Level/Obstacles/Room4"]
+transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -23.5, -2, 51.5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text7"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 7)
+mesh = SubResource("TextMesh_ekna3")
+skeleton = NodePath("../../../Room2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Level/Obstacles/Room4/Text7"]
 transform = Transform3D(0.2, 0, 0, 0, 1, 0, 0, 0, 6.4, -0.199997, 5, 7)
 mesh = SubResource("BoxMesh_p0g8u")
 skeleton = NodePath("../../../Room2")
@@ -7528,28 +7472,154 @@ mesh = SubResource("BoxMesh_p0g8u")
 skeleton = NodePath("../../../Room2")
 surface_material_override/0 = SubResource("StandardMaterial3D_0kvrt")
 
+[node name="RealEstate" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 1, 51)
+
+[node name="RealEstate33" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.5, 1, 53)
+
+[node name="RealEstate6" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 1, 52.5)
+
+[node name="RealEstate7" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 1, 54.5)
+
+[node name="RealEstate8" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 1, 56.5)
+
+[node name="RealEstate9" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 1, 58.5)
+
+[node name="RealEstate10" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 1, 58.5)
+
+[node name="RealEstate11" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 1, 58.5)
+
+[node name="RealEstate12" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 1, 58.5)
+
+[node name="RealEstate13" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 1, 58.5)
+
+[node name="RealEstate14" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 1, 56.5)
+
+[node name="RealEstate15" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 1, 54.5)
+
+[node name="RealEstate16" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 1, 52.5)
+
+[node name="RealEstate2" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 1, 51)
+
+[node name="RealEstate3" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 1, 51)
+
+[node name="RealEstate4" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 1, 51)
+
+[node name="RealEstate5" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 1, 51)
+
+[node name="RealEstate17" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 3, 51)
+
+[node name="RealEstate18" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 3, 52.5)
+
+[node name="RealEstate19" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 3, 54.5)
+
+[node name="RealEstate20" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 3, 56.5)
+
+[node name="RealEstate21" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -11.5, 3, 58.5)
+
+[node name="RealEstate22" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 3, 58.5)
+
+[node name="RealEstate23" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 3, 58.5)
+
+[node name="RealEstate24" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 3, 58.5)
+
+[node name="RealEstate25" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 3, 58.5)
+
+[node name="RealEstate26" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 3, 56.5)
+
+[node name="RealEstate27" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 3, 54.5)
+
+[node name="RealEstate28" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 3, 52.5)
+
+[node name="RealEstate29" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 3, 51)
+
+[node name="RealEstate30" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 3, 51)
+
+[node name="RealEstate31" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 3, 51)
+
+[node name="RealEstate32" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.5, 3, 51)
+
+[node name="RealEstate35" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 5, 54.5)
+
+[node name="RealEstate36" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 7, 54.5)
+
+[node name="RealEstate38" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 5, 56.5)
+
+[node name="RealEstate39" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 5, 56.5)
+
+[node name="RealEstate40" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 5, 56.5)
+
+[node name="RealEstate43" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 5, 54.5)
+
+[node name="RealEstate45" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -13.5, 5, 53)
+
+[node name="RealEstate46" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -15.5, 5, 53)
+
+[node name="RealEstate47" parent="Level/Obstacles/Room4" instance=ExtResource("14_3ce3e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -17.5, 5, 53)
+
 [node name="RoofCollider" type="Node3D" parent="Level"]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Level/RoofCollider"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Level/RoofCollider/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 8, 25.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 9, 25.5)
 shape = SubResource("BoxShape3D_lxnh0")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Level/RoofCollider/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 8, 72.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 9, 72.5)
 shape = SubResource("BoxShape3D_syffa")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Level/RoofCollider/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 8, 77)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 9, 77)
 shape = SubResource("BoxShape3D_db7jl")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="Level/RoofCollider/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 10.5, 51)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 9, 51)
 shape = SubResource("BoxShape3D_pae21")
 
 [node name="CollisionShape3D5" type="CollisionShape3D" parent="Level/RoofCollider/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 8, 56.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 9, 56.5)
 shape = SubResource("BoxShape3D_88ql8")
 
 [node name="Coins" type="Node3D" parent="Level"]
