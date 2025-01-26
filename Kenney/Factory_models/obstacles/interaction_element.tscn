@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5nl6pyaac8xb"]
+
+[ext_resource type="Script" path="res://Script/SpeedRun/disable_barrier.gd" id="1_o4svo"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_v36ku"]
+height = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_djx6j"]
+height = 1.0
+radius = 0.75
+
+[node name="Node3D" type="Area3D" node_paths=PackedStringArray("_shape")]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_o4svo")
+_shape = NodePath("CollisionShape3D")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_v36ku")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_djx6j")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
