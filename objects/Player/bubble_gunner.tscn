@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://u1ni1yeda6nt"]
+[gd_scene load_steps=11 format=3 uid="uid://u1ni1yeda6nt"]
 
 [ext_resource type="Script" path="res://Script/Player/player.gd" id="1_vp68s"]
 [ext_resource type="PackedScene" uid="uid://drl25hd7kaf2l" path="res://objects/UI/hud.tscn" id="2_5ttrk"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bevwapi7v5sxx" path="res://objects/UI/ingame_menu.tscn" id="3_iantk"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://Kenney/sounds/walking.ogg" id="4_potor"]
 [ext_resource type="PackedScene" uid="uid://lirlgquryj82" path="res://art/gun/gun.tscn" id="5_5gthi"]
+[ext_resource type="Texture2D" uid="uid://hpo8bgx7i78j" path="res://art/ammo/ammo_type_air.png" id="6_3pduc"]
 [ext_resource type="Script" path="res://Script/Player/gun.gd" id="6_heq7y"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sehjx"]
@@ -67,6 +68,25 @@ target_position = Vector3(0, 0, -50)
 [node name="gun" parent="Head/Camera" instance=ExtResource("5_5gthi")]
 transform = Transform3D(0.063, 0, 0, 0, 0.063, 0, 0, 0, 0.063, 0.3, -0.15, -0.3)
 
+[node name="muzzle" type="Node3D" parent="Head/Camera/gun"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.51893)
+
+[node name="ammo" type="Sprite3D" parent="Head/Camera/gun"]
+transform = Transform3D(0.383022, 0.135827, -0.291281, 0, 0.453154, 0.211309, 0.321394, -0.161872, 0.347136, 0.0547509, 0.0821238, 0.136873)
+visible = false
+billboard = 1
+texture = ExtResource("6_3pduc")
+
+[node name="count" type="Label3D" parent="Head/Camera/gun/ammo"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.626661, -0.504224, 0.0883041)
+billboard = 1
+outline_render_priority = 1
+modulate = Color(0.829839, 0.9553, 0.998515, 1)
+text = "0"
+font_size = 72
+outline_size = 8
+horizontal_alignment = 2
+
 [node name="Shadow" type="Decal" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7, 0)
 size = Vector3(1, 2, 1)
@@ -81,7 +101,9 @@ volume_db = -5.0
 [node name="Cooldown" type="Timer" parent="."]
 one_shot = true
 
-[node name="Gun" type="Node3D" parent="." node_paths=PackedStringArray("bullet_spawn_point")]
+[node name="Gun" type="Node3D" parent="." node_paths=PackedStringArray("_bullet_spawn_point", "_ammo_display", "_ammo_count")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.218757, 1.11448, -0.520868)
 script = ExtResource("6_heq7y")
-bullet_spawn_point = NodePath(".")
+_bullet_spawn_point = NodePath("../Head/Camera/gun/muzzle")
+_ammo_display = NodePath("../Head/Camera/gun/ammo")
+_ammo_count = NodePath("../Head/Camera/gun/ammo/count")
