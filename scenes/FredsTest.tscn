@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://c0ynpcarqj2gb"]
+[gd_scene load_steps=14 format=3 uid="uid://c0ynpcarqj2gb"]
 
 [ext_resource type="Script" path="res://Script/dummy_level.gd" id="1_7310i"]
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="2_7u00o"]
+[ext_resource type="Texture2D" uid="uid://crkp63lcepdbp" path="res://art/ammo/ammo_type_gum.png" id="3_k28jg"]
 [ext_resource type="PackedScene" uid="uid://b27nct0836fce" path="res://objects/Ammo/ammo_pickup_soap.tscn" id="4_m22vk"]
 [ext_resource type="PackedScene" uid="uid://dh7u5a0b2ke2g" path="res://objects/Ammo/ammo_pickup_speech.tscn" id="5_5wtbi"]
 [ext_resource type="PackedScene" uid="uid://bv61qxs0nfo7m" path="res://objects/Ammo/ammo_pickup_housing.tscn" id="6_0sy6n"]
@@ -12,11 +13,17 @@
 [ext_resource type="PackedScene" uid="uid://7pjd6svul4ab" path="res://Kenney/Factory_models/obstacles/Enemy.tscn" id="9_82vw6"]
 [ext_resource type="PackedScene" uid="uid://c3j6ootp2dj43" path="res://objects/Ammo/ammo_pickup_gum.tscn" id="10_50e2b"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mae1"]
+albedo_texture = ExtResource("3_k28jg")
+
 [node name="FredsTest" type="Node3D"]
 script = ExtResource("1_7310i")
 
 [node name="platform" parent="." instance=ExtResource("2_7u00o")]
 transform = Transform3D(50, 0, 0, 0, 1, 0, 0, 0, 50, 0, -0.785836, 0)
+
+[node name="platform-falling2" parent="platform" index="0"]
+material_override = SubResource("StandardMaterial3D_3mae1")
 
 [node name="StaticBody3D" parent="platform/platform-falling2" index="0"]
 physics_material_override = null
