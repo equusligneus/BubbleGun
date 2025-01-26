@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bnkwuifp268f5"]
 
-[ext_resource type="Script" path="res://Script/UI/ingame_menu.gd" id="1_6eqmy"]
+[ext_resource type="Script" path="res://Script/UI/endgame_menu.gd" id="1_pjkd1"]
 
 [node name="IngameMenu" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_6eqmy")
+script = ExtResource("1_pjkd1")
 
 [node name="PanelContainer" type="Panel" parent="."]
 layout_mode = 1

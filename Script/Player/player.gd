@@ -40,7 +40,7 @@ var hud: HUD;
 @onready var _gun : Gun = $Gun
 
 var _menu : IngameMenu
-var _end_menu: IngameMenu
+var _end_menu: EndgameMenu
 
 var score: int;
 
