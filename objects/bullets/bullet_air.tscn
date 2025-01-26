@@ -10,4 +10,7 @@
 script = ExtResource("2_tm87w")
 _effect = ExtResource("3_fo1mm")
 
+[node name="Impact" parent="." index="3"]
+sound_effect = "audio/sfx/bubble_boing.wav"
+
 [connection signal="hit" from="." to="AirBubble" method="_on_hit"]
