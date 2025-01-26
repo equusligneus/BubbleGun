@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dkjtpi173lqq7" path="res://Kenney/Factory_models/Models/GLB format/cover-corner.glb" id="1_tsvjc"]
 [ext_resource type="PackedScene" uid="uid://dpm3l05d7fu35" path="res://Kenney/objects/platform.tscn" id="3_56jv7"]
-[ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="3_j23uv"]
+[ext_resource type="Shader" path="res://objects/obstacles/Bubble.gdshader" id="3_j23uv"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_xubkc"]
 _surfaces = [{

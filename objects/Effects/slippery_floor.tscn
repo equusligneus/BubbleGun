@@ -2,7 +2,7 @@
 
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="1_jk07y"]
 [ext_resource type="Script" path="res://Script/Effects/remove_effect.gd" id="2_muwwk"]
-[ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="3_n8cyf"]
+[ext_resource type="Shader" path="res://objects/obstacles/Bubble.gdshader" id="3_n8cyf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lgjh5"]
 render_priority = 0

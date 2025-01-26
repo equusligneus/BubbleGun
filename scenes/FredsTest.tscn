@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bvx5cvigosg0s" path="res://Kenney/objects/platform_large_grass.tscn" id="7_gyvjl"]
 [ext_resource type="PackedScene" uid="uid://c0ek6dm4l6o0k" path="res://objects/Ammo/ammo_pickup_air.tscn" id="7_skmt8"]
 [ext_resource type="PackedScene" uid="uid://cr6d3x1iwo3lf" path="res://objects/obstacles/real_estate.tscn" id="8_twa04"]
-[ext_resource type="PackedScene" uid="uid://7pjd6svul4ab" path="res://Kenney/Factory_models/obstacles/Enemy.tscn" id="9_82vw6"]
+[ext_resource type="PackedScene" uid="uid://7pjd6svul4ab" path="res://objects/obstacles/Enemy.tscn" id="9_82vw6"]
 [ext_resource type="PackedScene" uid="uid://c3j6ootp2dj43" path="res://objects/Ammo/ammo_pickup_gum.tscn" id="10_50e2b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3mae1"]

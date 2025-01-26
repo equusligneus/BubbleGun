@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=4 uid="uid://7pjd6svul4ab"]
 
-[ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_07dur"]
+[ext_resource type="Shader" path="res://objects/obstacles/Bubble.gdshader" id="1_07dur"]
 [ext_resource type="Script" path="res://Script/obstacles/human.gd" id="1_8afak"]
 [ext_resource type="Texture2D" uid="uid://b5hxnjwvrxuji" path="res://Kenney/models/Textures/colormap.png" id="2_sk53e"]
 [ext_resource type="Script" path="res://Script/Effects/effect_tumble.gd" id="4_j5u7b"]
