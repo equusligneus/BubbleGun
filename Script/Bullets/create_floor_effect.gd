@@ -11,5 +11,5 @@ func _on_hit(collision: KinematicCollision3D):
 		effect.global_position = collision.get_position()
 		var tan1 := normal.cross(Vector3.FORWARD)
 		var tan2 := tan1.cross(normal)
-		effect.transform.basis = Basis(tan2, normal, tan1)
+		effect.transform.basis = Impact.to_basis(collision)
 		get_tree().current_scene.add_child(effect)

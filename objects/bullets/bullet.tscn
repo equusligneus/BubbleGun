@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://5hibtpi5ux6y"]
+[gd_scene load_steps=7 format=3 uid="uid://5hibtpi5ux6y"]
 
 [ext_resource type="Script" path="res://Script/Bullets/bullet.gd" id="1_tr861"]
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="2_i3psr"]
+[ext_resource type="Script" path="res://Script/Bullets/impact.gd" id="3_6locx"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_6ou7u"]
 
@@ -31,3 +32,7 @@ shape = SubResource("SphereShape3D_6ou7u")
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 mesh = SubResource("SphereMesh_5eh5y")
 surface_material_override/0 = SubResource("ShaderMaterial_drjg6")
+
+[node name="Impact" type="Node3D" parent="."]
+script = ExtResource("3_6locx")
+sound_effect = "audio/sfx/bubble_pop.wav"

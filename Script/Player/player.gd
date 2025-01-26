@@ -86,11 +86,9 @@ func _handle_gravity(delta: float):
 	_upwards.y = clamp(_upwards.y + _gravity * delta, _gravity, -2 * _gravity)
 	
 	if !Input.is_action_just_pressed("jump"): return
-	print("trying to jump")
 	if !_ground.is_grounded: return
-	print("actually jumping")
 	
-	Audio.play("sounds/jump_a.ogg, sounds/jump_b.ogg, sounds/jump_c.ogg")
+	Audio.play("Kenney/sounds/jump_a.ogg, Kenney/sounds/jump_b.ogg, Kenney/sounds/jump_c.ogg")
 	_upwards.y = _jump_strength
 
 func _handle_rotation(delta: float):
