@@ -1,11 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://m3f30ltcjbv1"]
+[gd_scene load_steps=6 format=3 uid="uid://m3f30ltcjbv1"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://ddrfhccdxf1m" path="res://Script/Slip/physmat_slippery.tres" id="1_jk07y"]
 [ext_resource type="Script" path="res://Script/Effects/remove_effect.gd" id="2_muwwk"]
+[ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="3_n8cyf"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fey7r"]
-transparency = 1
-albedo_color = Color(0.647059, 1, 1, 0.698039)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lgjh5"]
+render_priority = 0
+shader = ExtResource("3_n8cyf")
+shader_parameter/fuwafuwa_speed = 1.5
+shader_parameter/fuwafuwa_size = 0.05
+shader_parameter/outline_color = Color(0.45, 0.7, 1, 1)
+shader_parameter/outline_ratio = 1.0
+shader_parameter/noise_speed = 0.2
+shader_parameter/noise_scale = 0.5
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_37pea"]
 height = 0.0346776
@@ -19,7 +26,7 @@ script = ExtResource("2_muwwk")
 radius = 2.0
 height = 0.05
 sides = 32
-material = SubResource("StandardMaterial3D_fey7r")
+material = SubResource("ShaderMaterial_lgjh5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CylinderShape3D_37pea")
