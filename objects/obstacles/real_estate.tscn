@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cr6d3x1iwo3lf"]
+[gd_scene load_steps=9 format=3 uid="uid://cr6d3x1iwo3lf"]
 
 [ext_resource type="Script" path="res://Script/obstacles/real_estate.gd" id="1_l4ubf"]
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_xh1b8"]
+[ext_resource type="PackedScene" uid="uid://freik2nvqhgl" path="res://art/house/house.glb" id="3_6ci6k"]
+[ext_resource type="Script" path="res://Script/Effects/effect_disable_collider.gd" id="4_k88re"]
+[ext_resource type="Script" path="res://Script/Effects/effect_shrink.gd" id="5_04osb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jtkvx"]
 
@@ -30,14 +33,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_lgjh5")
 [node name="root" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.297074, 0)
 
-[node name="Node3D" type="Node3D" parent="root"]
+[node name="house2" parent="root" instance=ExtResource("3_6ci6k")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.30783, 0)
 
-[node name="house" type="CSGPolygon3D" parent="root/Node3D"]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0.130066)
-polygon = PackedVector2Array(-0.5, 0, -0.5, 1, 0, 1.5, 0.5, 1, 0.5, 0)
+[node name="Unblocker" type="Node" parent="." node_paths=PackedStringArray("shapes")]
+script = ExtResource("4_k88re")
+shapes = [NodePath("../CollisionShape3D")]
 
-[node name="roof" type="CSGBox3D" parent="root/Node3D"]
-transform = Transform3D(0.22981, -0.0353553, 0, 0.22981, 0.0353553, 0, 0, 0, 0.275, -0.1, 0.29, 0)
-
-[node name="roof2" type="CSGBox3D" parent="root/Node3D"]
-transform = Transform3D(0.22981, 0.0353553, 0, -0.22981, 0.0353553, 0, 0, 0, 0.275, 0.1, 0.29, 0)
+[node name="Shrinkage" type="Node" parent="." node_paths=PackedStringArray("_targets")]
+script = ExtResource("5_04osb")
+_targets = [NodePath("../root")]
