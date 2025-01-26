@@ -1,6 +1,7 @@
-[gd_scene load_steps=98 format=3 uid="uid://bqpo7ijnv6d1i"]
+[gd_scene load_steps=99 format=3 uid="uid://bqpo7ijnv6d1i"]
 
 [ext_resource type="PackedScene" uid="uid://dh7ffk4u7w6lh" path="res://Kenney/objects/platform_backup.tscn" id="1_0xx5d"]
+[ext_resource type="Script" path="res://Script/Level.gd" id="1_8lo8e"]
 [ext_resource type="PackedScene" uid="uid://d0bhgju0kflun" path="res://Kenney/Factory_models/Models/GLB format/arrow-basic.glb" id="2_ue82y"]
 [ext_resource type="PackedScene" uid="uid://2arf1p1n2lmj" path="res://Kenney/Factory_models/Models/GLB format/arrow.glb" id="3_caly2"]
 [ext_resource type="PackedScene" uid="uid://cvjd3aew05283" path="res://Kenney/Factory_models/obstacles/Large_wall_window.tscn" id="3_i4cgs"]
@@ -140,6 +141,7 @@ size = Vector3(11, 1, 14)
 size = Vector3(10, 6, 1)
 
 [node name="Level1" type="Node3D"]
+script = ExtResource("1_8lo8e")
 
 [node name="Level" type="Node3D" parent="."]
 

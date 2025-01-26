@@ -8,6 +8,8 @@ extends Control
 @export var score_container: HBoxContainer
 @export var score: int;
 @onready var score_hud: Label = $"Top Bar/ScoreContainer/Label2"
+@onready var timer: Label = $"Top Bar/Time_left/time"
+
 
 func set_player(player: Gunner):
 	var inventory := player.get_inventory()

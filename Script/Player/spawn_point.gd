@@ -14,3 +14,4 @@ func _ready() -> void:
 	new_basis.z *= node.scale.z
 	node.basis = new_basis
 	get_parent_node_3d().add_child(node)
+	get_parent().set_player(node);
