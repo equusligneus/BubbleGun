@@ -6681,6 +6681,471 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27.5,
 [node name="structure-yellow-tall67" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27.5, 0, 48.5)
 
+[node name="structure-yellow-tall385" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -41.5, 0, 50.5)
+
+[node name="structure-yellow-tall405" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 46.5)
+
+[node name="structure-yellow-tall406" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 47.5)
+
+[node name="structure-yellow-tall407" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 48.5)
+
+[node name="structure-yellow-tall408" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 49.5)
+
+[node name="structure-yellow-tall409" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 50.5)
+
+[node name="structure-yellow-tall410" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 51.5)
+
+[node name="structure-yellow-tall411" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 52.5)
+
+[node name="structure-yellow-tall412" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 53.5)
+
+[node name="structure-yellow-tall413" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 53.5)
+
+[node name="structure-yellow-tall386" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -41.5, 0, 49.5)
+
+[node name="structure-yellow-tall400" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 49.5)
+
+[node name="structure-yellow-tall401" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 50.5)
+
+[node name="structure-yellow-tall402" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 51.5)
+
+[node name="structure-yellow-tall403" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 52.5)
+
+[node name="structure-yellow-tall404" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 53.5)
+
+[node name="structure-yellow-tall414" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 54.5)
+
+[node name="structure-yellow-tall415" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 55.5)
+
+[node name="structure-yellow-tall416" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 56.5)
+
+[node name="structure-yellow-tall417" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 57.5)
+
+[node name="structure-yellow-tall418" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 54.5)
+
+[node name="structure-yellow-tall419" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 55.5)
+
+[node name="structure-yellow-tall420" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 56.5)
+
+[node name="structure-yellow-tall421" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 57.5)
+
+[node name="structure-yellow-tall422" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 58.5)
+
+[node name="structure-yellow-tall423" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 59.5)
+
+[node name="structure-yellow-tall424" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 60.5)
+
+[node name="structure-yellow-tall425" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -48.5, 0, 61.5)
+
+[node name="structure-yellow-tall442" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 62.5)
+
+[node name="structure-yellow-tall443" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 63.5)
+
+[node name="structure-yellow-tall444" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 64.5)
+
+[node name="structure-yellow-tall445" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 65.5)
+
+[node name="structure-yellow-tall446" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 66.5)
+
+[node name="structure-yellow-tall447" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 67.5)
+
+[node name="structure-yellow-tall448" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 68.5)
+
+[node name="structure-yellow-tall449" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -52.5, 0, 69.5)
+
+[node name="structure-yellow-tall523" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 77.5)
+
+[node name="structure-yellow-tall524" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 78.5)
+
+[node name="structure-yellow-tall525" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 79.5)
+
+[node name="structure-yellow-tall526" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 80.5)
+
+[node name="structure-yellow-tall527" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 81.5)
+
+[node name="structure-yellow-tall528" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 82.5)
+
+[node name="structure-yellow-tall529" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 83.5)
+
+[node name="structure-yellow-tall530" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 84.5)
+
+[node name="structure-yellow-tall532" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 70.5)
+
+[node name="structure-yellow-tall533" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 71.5)
+
+[node name="structure-yellow-tall534" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 72.5)
+
+[node name="structure-yellow-tall535" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 73.5)
+
+[node name="structure-yellow-tall536" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 74.5)
+
+[node name="structure-yellow-tall537" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 75.5)
+
+[node name="structure-yellow-tall538" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5, 0, 76.5)
+
+[node name="structure-yellow-tall426" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 58.5)
+
+[node name="structure-yellow-tall427" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 59.5)
+
+[node name="structure-yellow-tall428" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 60.5)
+
+[node name="structure-yellow-tall429" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 61.5)
+
+[node name="structure-yellow-tall430" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 62.5)
+
+[node name="structure-yellow-tall431" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 63.5)
+
+[node name="structure-yellow-tall432" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 64.5)
+
+[node name="structure-yellow-tall433" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -45.5, 0, 65.5)
+
+[node name="structure-yellow-tall461" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -42.5, 0, 63.5)
+
+[node name="structure-yellow-tall465" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -42.5, 0, 64.5)
+
+[node name="structure-yellow-tall466" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -42.5, 0, 65.5)
+
+[node name="structure-yellow-tall473" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 63.5)
+
+[node name="structure-yellow-tall474" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 64.5)
+
+[node name="structure-yellow-tall475" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 65.5)
+
+[node name="structure-yellow-tall476" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 66.5)
+
+[node name="structure-yellow-tall477" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 67.5)
+
+[node name="structure-yellow-tall478" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 68.5)
+
+[node name="structure-yellow-tall479" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 69.5)
+
+[node name="structure-yellow-tall480" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 70.5)
+
+[node name="structure-yellow-tall481" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 71.5)
+
+[node name="structure-yellow-tall482" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 72.5)
+
+[node name="structure-yellow-tall483" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 73.5)
+
+[node name="structure-yellow-tall484" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 74.5)
+
+[node name="structure-yellow-tall485" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 75.5)
+
+[node name="structure-yellow-tall486" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 76.5)
+
+[node name="structure-yellow-tall487" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 77.5)
+
+[node name="structure-yellow-tall500" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 80.5)
+
+[node name="structure-yellow-tall501" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 81.5)
+
+[node name="structure-yellow-tall502" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 82.5)
+
+[node name="structure-yellow-tall503" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 83.5)
+
+[node name="structure-yellow-tall504" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -36.5, 0, 84.5)
+
+[node name="structure-yellow-tall488" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 70.5)
+
+[node name="structure-yellow-tall489" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 71.5)
+
+[node name="structure-yellow-tall490" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 72.5)
+
+[node name="structure-yellow-tall491" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 73.5)
+
+[node name="structure-yellow-tall492" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 74.5)
+
+[node name="structure-yellow-tall493" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -40.5, 0, 75.5)
+
+[node name="structure-yellow-tall389" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -42, 0, 49)
+
+[node name="structure-yellow-tall390" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -42, 0, 46)
+
+[node name="structure-yellow-tall391" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -43, 0, 49)
+
+[node name="structure-yellow-tall392" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -43, 0, 46)
+
+[node name="structure-yellow-tall393" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -44, 0, 49)
+
+[node name="structure-yellow-tall394" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -44, 0, 46)
+
+[node name="structure-yellow-tall395" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -45, 0, 49)
+
+[node name="structure-yellow-tall396" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -45, 0, 46)
+
+[node name="structure-yellow-tall397" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -46, 0, 46)
+
+[node name="structure-yellow-tall398" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -47, 0, 46)
+
+[node name="structure-yellow-tall434" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -49, 0, 62)
+
+[node name="structure-yellow-tall435" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -50, 0, 62)
+
+[node name="structure-yellow-tall436" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -51, 0, 62)
+
+[node name="structure-yellow-tall437" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -52, 0, 62)
+
+[node name="structure-yellow-tall441" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -49, 0, 70)
+
+[node name="structure-yellow-tall450" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -50, 0, 70)
+
+[node name="structure-yellow-tall451" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -51, 0, 70)
+
+[node name="structure-yellow-tall452" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -52, 0, 70)
+
+[node name="structure-yellow-tall531" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -53, 0, 70)
+
+[node name="structure-yellow-tall539" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -54, 0, 70)
+
+[node name="structure-yellow-tall453" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -45, 0, 70)
+
+[node name="structure-yellow-tall454" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -46, 0, 70)
+
+[node name="structure-yellow-tall455" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -47, 0, 70)
+
+[node name="structure-yellow-tall456" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -48, 0, 70)
+
+[node name="structure-yellow-tall457" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41, 0, 70)
+
+[node name="structure-yellow-tall458" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -42, 0, 70)
+
+[node name="structure-yellow-tall494" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -36, 0, 78)
+
+[node name="structure-yellow-tall495" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -35, 0, 78)
+
+[node name="structure-yellow-tall496" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -34, 0, 78)
+
+[node name="structure-yellow-tall497" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -36, 0, 80)
+
+[node name="structure-yellow-tall498" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -35, 0, 80)
+
+[node name="structure-yellow-tall499" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -34, 0, 80)
+
+[node name="structure-yellow-tall459" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -43, 0, 70)
+
+[node name="structure-yellow-tall467" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -40, 0, 63)
+
+[node name="structure-yellow-tall468" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41, 0, 63)
+
+[node name="structure-yellow-tall469" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -42, 0, 63)
+
+[node name="structure-yellow-tall470" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -37, 0, 63)
+
+[node name="structure-yellow-tall471" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -38, 0, 63)
+
+[node name="structure-yellow-tall472" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -39, 0, 63)
+
+[node name="structure-yellow-tall460" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -44, 0, 70)
+
+[node name="structure-yellow-tall505" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -41, 0, 85)
+
+[node name="structure-yellow-tall506" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -42, 0, 85)
+
+[node name="structure-yellow-tall507" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -37, 0, 85)
+
+[node name="structure-yellow-tall508" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -38, 0, 85)
+
+[node name="structure-yellow-tall509" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -39, 0, 85)
+
+[node name="structure-yellow-tall510" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -40, 0, 85)
+
+[node name="structure-yellow-tall511" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -47, 0, 85)
+
+[node name="structure-yellow-tall512" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -48, 0, 85)
+
+[node name="structure-yellow-tall513" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -43, 0, 85)
+
+[node name="structure-yellow-tall514" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -44, 0, 85)
+
+[node name="structure-yellow-tall515" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -45, 0, 85)
+
+[node name="structure-yellow-tall516" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -46, 0, 85)
+
+[node name="structure-yellow-tall517" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -53, 0, 85)
+
+[node name="structure-yellow-tall518" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -54, 0, 85)
+
+[node name="structure-yellow-tall519" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -49, 0, 85)
+
+[node name="structure-yellow-tall520" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -50, 0, 85)
+
+[node name="structure-yellow-tall521" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -51, 0, 85)
+
+[node name="structure-yellow-tall522" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -52, 0, 85)
+
+[node name="structure-yellow-tall462" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -43, 0, 66)
+
+[node name="structure-yellow-tall463" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -44, 0, 66)
+
+[node name="structure-yellow-tall464" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -45, 0, 66)
+
+[node name="structure-yellow-tall438" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -46, 0, 66)
+
+[node name="structure-yellow-tall439" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -47, 0, 66)
+
+[node name="structure-yellow-tall440" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -48, 0, 66)
+
+[node name="structure-yellow-tall399" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -48, 0, 46)
+
+[node name="structure-yellow-tall387" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -41.5, 0, 45.5)
+
+[node name="structure-yellow-tall388" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -41.5, 0, 44.5)
+
 [node name="structure-yellow-tall68" parent="Level/Obstacles/Room4" instance=ExtResource("7_wfx66")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -27.5, 2, 48.5)
 
@@ -8371,6 +8836,474 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 3, 82)
 [node name="Node3D150" parent="Level/Coins" instance=ExtResource("15_etj4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 3, 82)
 
+[node name="Node3D195" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 81)
+
+[node name="Node3D196" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 81)
+
+[node name="Node3D197" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 81)
+
+[node name="Node3D198" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 82)
+
+[node name="Node3D199" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 82)
+
+[node name="Node3D200" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 82)
+
+[node name="Node3D201" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 83)
+
+[node name="Node3D202" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 83)
+
+[node name="Node3D203" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 83)
+
+[node name="Node3D204" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 84)
+
+[node name="Node3D205" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 81)
+
+[node name="Node3D206" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 82)
+
+[node name="Node3D207" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 83)
+
+[node name="Node3D208" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 84)
+
+[node name="Node3D209" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 84)
+
+[node name="Node3D210" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 84)
+
+[node name="Node3D211" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 77)
+
+[node name="Node3D212" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 77)
+
+[node name="Node3D213" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 77)
+
+[node name="Node3D214" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 78)
+
+[node name="Node3D215" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 78)
+
+[node name="Node3D216" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 78)
+
+[node name="Node3D217" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 79)
+
+[node name="Node3D218" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 79)
+
+[node name="Node3D219" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 79)
+
+[node name="Node3D220" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 80)
+
+[node name="Node3D221" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 77)
+
+[node name="Node3D222" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 78)
+
+[node name="Node3D223" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 79)
+
+[node name="Node3D224" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 80)
+
+[node name="Node3D225" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 80)
+
+[node name="Node3D226" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 80)
+
+[node name="Node3D227" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 73)
+
+[node name="Node3D228" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 73)
+
+[node name="Node3D229" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 73)
+
+[node name="Node3D230" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 74)
+
+[node name="Node3D231" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 74)
+
+[node name="Node3D232" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 74)
+
+[node name="Node3D233" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 75)
+
+[node name="Node3D234" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 75)
+
+[node name="Node3D235" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 75)
+
+[node name="Node3D236" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 76)
+
+[node name="Node3D237" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 73)
+
+[node name="Node3D238" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 74)
+
+[node name="Node3D239" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 75)
+
+[node name="Node3D240" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 76)
+
+[node name="Node3D241" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 76)
+
+[node name="Node3D242" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 76)
+
+[node name="Node3D243" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 73)
+
+[node name="Node3D244" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 73)
+
+[node name="Node3D245" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 73)
+
+[node name="Node3D246" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 74)
+
+[node name="Node3D247" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 74)
+
+[node name="Node3D248" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 74)
+
+[node name="Node3D249" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 75)
+
+[node name="Node3D250" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 75)
+
+[node name="Node3D251" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 75)
+
+[node name="Node3D252" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 76)
+
+[node name="Node3D253" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 73)
+
+[node name="Node3D254" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 74)
+
+[node name="Node3D255" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 75)
+
+[node name="Node3D256" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 76)
+
+[node name="Node3D257" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 76)
+
+[node name="Node3D258" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 76)
+
+[node name="Node3D259" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 73)
+
+[node name="Node3D260" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 73)
+
+[node name="Node3D261" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 73)
+
+[node name="Node3D262" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 74)
+
+[node name="Node3D263" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 74)
+
+[node name="Node3D264" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 74)
+
+[node name="Node3D265" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 75)
+
+[node name="Node3D266" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 75)
+
+[node name="Node3D267" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 75)
+
+[node name="Node3D268" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 76)
+
+[node name="Node3D269" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 73)
+
+[node name="Node3D339" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 72)
+
+[node name="Node3D340" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 72)
+
+[node name="Node3D341" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 72)
+
+[node name="Node3D342" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 72)
+
+[node name="Node3D343" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 72)
+
+[node name="Node3D344" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 72)
+
+[node name="Node3D345" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 72)
+
+[node name="Node3D346" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 72)
+
+[node name="Node3D347" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 72)
+
+[node name="Node3D348" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 72)
+
+[node name="Node3D349" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 72)
+
+[node name="Node3D350" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 72)
+
+[node name="Node3D270" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 74)
+
+[node name="Node3D271" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 75)
+
+[node name="Node3D272" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 76)
+
+[node name="Node3D273" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 76)
+
+[node name="Node3D274" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 76)
+
+[node name="Node3D275" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 77)
+
+[node name="Node3D276" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 77)
+
+[node name="Node3D277" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 77)
+
+[node name="Node3D278" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 78)
+
+[node name="Node3D279" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 78)
+
+[node name="Node3D280" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 78)
+
+[node name="Node3D281" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 79)
+
+[node name="Node3D282" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 79)
+
+[node name="Node3D283" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 79)
+
+[node name="Node3D284" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 80)
+
+[node name="Node3D285" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 77)
+
+[node name="Node3D286" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 78)
+
+[node name="Node3D287" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 79)
+
+[node name="Node3D288" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 80)
+
+[node name="Node3D289" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 80)
+
+[node name="Node3D290" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 80)
+
+[node name="Node3D291" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 77)
+
+[node name="Node3D292" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 77)
+
+[node name="Node3D293" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 77)
+
+[node name="Node3D294" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 78)
+
+[node name="Node3D295" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 78)
+
+[node name="Node3D296" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 78)
+
+[node name="Node3D297" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 79)
+
+[node name="Node3D298" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 79)
+
+[node name="Node3D299" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 79)
+
+[node name="Node3D300" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 80)
+
+[node name="Node3D301" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 77)
+
+[node name="Node3D302" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 78)
+
+[node name="Node3D303" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 79)
+
+[node name="Node3D304" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 80)
+
+[node name="Node3D305" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 80)
+
+[node name="Node3D306" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 80)
+
+[node name="Node3D307" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 81)
+
+[node name="Node3D308" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 81)
+
+[node name="Node3D309" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 81)
+
+[node name="Node3D310" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 82)
+
+[node name="Node3D311" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 82)
+
+[node name="Node3D312" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 82)
+
+[node name="Node3D313" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 83)
+
+[node name="Node3D314" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 83)
+
+[node name="Node3D315" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 83)
+
+[node name="Node3D316" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, 0, 84)
+
+[node name="Node3D317" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 81)
+
+[node name="Node3D318" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 82)
+
+[node name="Node3D319" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 83)
+
+[node name="Node3D320" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49, 0, 84)
+
+[node name="Node3D321" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 84)
+
+[node name="Node3D322" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0, 84)
+
+[node name="Node3D323" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 81)
+
+[node name="Node3D324" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 81)
+
+[node name="Node3D325" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 81)
+
+[node name="Node3D326" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 82)
+
+[node name="Node3D327" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 82)
+
+[node name="Node3D328" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 82)
+
+[node name="Node3D329" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 83)
+
+[node name="Node3D330" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 83)
+
+[node name="Node3D331" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 83)
+
+[node name="Node3D332" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 84)
+
+[node name="Node3D333" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 81)
+
+[node name="Node3D334" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 82)
+
+[node name="Node3D335" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 83)
+
+[node name="Node3D336" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53, 0, 84)
+
+[node name="Node3D337" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 84)
+
+[node name="Node3D338" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 84)
+
 [node name="Node3D151" parent="Level/Coins" instance=ExtResource("15_etj4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 3, 79)
 
@@ -8430,6 +9363,90 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 10.5, 53)
 
 [node name="Node3D63" parent="Level/Coins" instance=ExtResource("15_etj4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, 53)
+
+[node name="Node3D167" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0, 47.5)
+
+[node name="Node3D168" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0, 47.5)
+
+[node name="Node3D169" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 47.5)
+
+[node name="Node3D170" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 50.5)
+
+[node name="Node3D171" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 53.5)
+
+[node name="Node3D172" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 56.5)
+
+[node name="Node3D173" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 59.5)
+
+[node name="Node3D174" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 62.5)
+
+[node name="Node3D175" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 64.5)
+
+[node name="Node3D176" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 64.5)
+
+[node name="Node3D179" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 64.5)
+
+[node name="Node3D177" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 66.5)
+
+[node name="Node3D178" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 66.5)
+
+[node name="Node3D180" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51, 0, 68.5)
+
+[node name="Node3D181" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, 68.5)
+
+[node name="Node3D182" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47, 0, 68)
+
+[node name="Node3D183" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45, 0, 68)
+
+[node name="Node3D184" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, 0, 68)
+
+[node name="Node3D185" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 68)
+
+[node name="Node3D186" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 0, 65)
+
+[node name="Node3D187" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 65)
+
+[node name="Node3D188" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 68)
+
+[node name="Node3D189" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 71)
+
+[node name="Node3D190" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 74)
+
+[node name="Node3D191" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 77)
+
+[node name="Node3D192" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 80)
+
+[node name="Node3D193" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 82)
+
+[node name="Node3D194" parent="Level/Coins" instance=ExtResource("15_etj4v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0, 84)
 
 [node name="Node3D64" parent="Level/Coins" instance=ExtResource("15_etj4v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, 58)
