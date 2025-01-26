@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqxxmqcc2g0bt"]
+
+[ext_resource type="Script" path="res://Script/Menu.gd" id="1_5wfg3"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5wfg3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.204479, 0.393963, 0.507019, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -431.0
+offset_top = 100.0
+offset_right = 431.0
+offset_bottom = 409.0
+grow_horizontal = 2
+text = "Bubble Gun is a 3D platformer where you collect different types of ammunition to your gun to clear fun puzzles!
+- Bouncy ammo to jump higher
+- Soap bubble to run faster
+- Speech bubble to deal with introverted Robots
+- Housing bubble to relive the golden 2008s
+
+You have 90 seconds to collect as many coins as possible, Enjoy!
+
+Controls:
+- WASD for movement
+- LMB to shoot bubbles
+- ESC to pause and restart level"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -96.0
+offset_top = -262.0
+offset_right = 96.0
+offset_bottom = -200.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Start Game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
