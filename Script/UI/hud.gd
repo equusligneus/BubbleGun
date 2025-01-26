@@ -16,7 +16,6 @@ func set_player(player: Gunner):
 	inventory.ammo_type_added.connect(_on_ammo_type_added)
 	inventory.ammo_selection_changed.connect(_on_ammo_type_selected)
 	player.add_child(self)
-	
 
 func _on_ammo_type_added(ammo: AmmoInstance):
 	var counter : AmmoCounter = ammo_counter_scene.instantiate()
@@ -31,3 +30,4 @@ func _on_ammo_type_selected(index: int):
 func _on_score_increased(add: int):
 	score += add;
 	score_hud.text = str(score);
+	get_parent()._end_menu.score.text = str(score);

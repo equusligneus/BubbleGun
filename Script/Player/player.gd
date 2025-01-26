@@ -19,6 +19,7 @@ var _ground_movement := Vector3()
 @export_subgroup("UI")
 @export var hud_scene : PackedScene
 @export var menu_scene: PackedScene
+@export var end_menu: PackedScene
 
 var mouse_sensitivity = 700
 var gamepad_sensitivity := 0.075
@@ -39,6 +40,9 @@ var hud: HUD;
 @onready var _gun : Gun = $Gun
 
 var _menu : IngameMenu
+var _end_menu: EndgameMenu
+
+var score: int;
 
 # Functions
 func get_inventory() -> Inventory:
@@ -47,6 +51,9 @@ func get_inventory() -> Inventory:
 func get_menu() -> IngameMenu:
 	return _menu
 
+func get_end_menu() -> EndgameMenu:
+	return _end_menu
+
 func _ready():
 	_gun.init()
 	hud = hud_scene.instantiate()
@@ -54,10 +61,13 @@ func _ready():
 	
 	_menu = menu_scene.instantiate()
 	_menu.set_player(self)
+	
+	_end_menu = end_menu.instantiate()
+	_end_menu.set_player(self)
 
 func _physics_process(delta):
 	if _menu.is_open(): return
-	
+	if _end_menu.is_open(): return
 	# Handle functions	
 	_handle_controls()
 	_handle_gravity(delta)
@@ -71,7 +81,7 @@ func _physics_process(delta):
 # Mouse movement
 
 func _input(event):
-	if event is InputEventMouseMotion and !_menu.is_open():
+	if event is InputEventMouseMotion and (!_menu.is_open() or !_end_menu.is_open()):
 		_rotation_input -= event.relative / mouse_sensitivity
 
 func _handle_controls():

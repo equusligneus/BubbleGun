@@ -24,4 +24,5 @@ func set_player(node: Gunner):
 	player = node;
 	
 func _on_timer_timeout():
-	get_tree().reload_current_scene()
+	player._end_menu._set_visible(true);
+	timer.stop()
