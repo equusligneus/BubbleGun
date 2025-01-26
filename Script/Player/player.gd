@@ -64,7 +64,7 @@ func _ready():
 
 func _physics_process(delta):
 	if _menu.is_open(): return
-	if end_menu.is_open(): return
+	if _end_menu.is_open(): return
 	# Handle functions	
 	_handle_controls()
 	_handle_gravity(delta)
@@ -78,7 +78,7 @@ func _physics_process(delta):
 # Mouse movement
 
 func _input(event):
-	if event is InputEventMouseMotion and !_menu.is_open() or !_end_menu.is_open():
+	if event is InputEventMouseMotion and (!_menu.is_open() or !_end_menu.is_open()):
 		_rotation_input -= event.relative / mouse_sensitivity
 
 func _handle_controls():

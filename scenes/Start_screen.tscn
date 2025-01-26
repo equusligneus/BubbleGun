@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqxxmqcc2g0bt"]
+[gd_scene load_steps=3 format=3 uid="uid://dqxxmqcc2g0bt"]
 
 [ext_resource type="Script" path="res://Script/Menu.gd" id="1_5wfg3"]
+[ext_resource type="Texture2D" uid="uid://rfrvdftlo7t7" path="res://art/gun/icon.png" id="2_4xkds"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -18,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.204479, 0.393963, 0.507019, 1)
+color = Color(0.203922, 0.27451, 0.305882, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -26,9 +27,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -431.0
-offset_top = 100.0
+offset_top = 250.0
 offset_right = 431.0
-offset_bottom = 409.0
+offset_bottom = 559.0
 grow_horizontal = 2
 text = "Bubble Gun is a 3D platformer where you collect different types of ammunition to your gun to clear fun puzzles!
 - Bouncy ammo to jump higher
@@ -53,11 +54,22 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -96.0
-offset_top = -262.0
+offset_top = -120.0
 offset_right = 96.0
-offset_bottom = -200.0
+offset_bottom = -58.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Start Game"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+texture = ExtResource("2_4xkds")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

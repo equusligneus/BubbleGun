@@ -30,3 +30,4 @@ func _on_ammo_type_selected(index: int):
 func _on_score_increased(add: int):
 	score += add;
 	score_hud.text = str(score);
+	get_parent()._end_menu.score.text = str(score);
