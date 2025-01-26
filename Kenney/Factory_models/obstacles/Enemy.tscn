@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://7pjd6svul4ab"]
+[gd_scene load_steps=16 format=4 uid="uid://7pjd6svul4ab"]
 
 [ext_resource type="Shader" path="res://Kenney/Factory_models/obstacles/Bubble.gdshader" id="1_07dur"]
 [ext_resource type="Script" path="res://Script/obstacles/human.gd" id="1_8afak"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://Script/Effects/effect_tumble.gd" id="4_j5u7b"]
 [ext_resource type="Script" path="res://Script/Effects/effect_shrink.gd" id="5_mjiiu"]
 [ext_resource type="Script" path="res://Script/Effects/effect_disable_collider.gd" id="6_1l3er"]
+[ext_resource type="Script" path="res://Script/Effects/effect_turn_invisible.gd" id="7_6aery"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_5eh5y"]
 
@@ -133,3 +134,7 @@ _targets = [NodePath("../root")]
 [node name="Unblocker" type="Node" parent="." node_paths=PackedStringArray("shapes")]
 script = ExtResource("6_1l3er")
 shapes = [NodePath("../CollisionShape3D")]
+
+[node name="BubblePop" type="Node" parent="." node_paths=PackedStringArray("_targets")]
+script = ExtResource("7_6aery")
+_targets = [NodePath("../MeshInstance3D")]
