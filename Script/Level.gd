@@ -6,7 +6,6 @@ var second_timer;
 var second: int = 1;
 @export var seconds: int = 90;
 
-
 var player: Gunner;
 
 func _ready(): 

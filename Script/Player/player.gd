@@ -8,12 +8,15 @@ extends CharacterBody3D
 @export var _gravity := -20.0
 @export var _bounce_threshold := -5.0
 
+@export var _air_control := 0.2
+
 @export var _turn_rate := 30.0
 
 @onready var _ground := Ground.new(self)
 @onready var _upwards := Vector3(0.0, _gravity, 0.0)
 var _ground_movement := Vector3()
 
+@export_subgroup("UI")
 @export var hud_scene : PackedScene
 @export var menu_scene: PackedScene
 
@@ -36,8 +39,6 @@ signal health_updated
 @onready var blaster_cooldown : Timer = $Cooldown
 @onready var _inventory := Inventory.new(self)
 @onready var _gun : Gun = $Gun
-
-@export var crosshair:TextureRect
 
 var _menu : IngameMenu
 
@@ -112,28 +113,27 @@ func _handle_movement(delta: float):
 		travel += _upwards
 	
 	travel *= delta
-	#if was_on_ground:
-		#var y_offset := 0.9 * absf(travel.y)
-		#move_and_collide(Vector3.UP * y_offset)
-		#if travel.y > 0.0:
-			#travel.y -= y_offset
 	
 	for i in 5:
 		var collision := move_and_collide(travel)
 		if !is_instance_valid(collision):
 			break
 		
+		var normal := collision.get_normal()
 		var reflect_factor := 1.0
+		
 		if _ground.is_valid_ground(collision):
 			_ground.reset(basis, collision)
 			if !was_on_ground && _upwards.y < _bounce_threshold:
 				reflect_factor += _ground.bounciness
 		else:
-			# do step raycast
+			# push away from wall
+			var horizontal_push := Vector3(normal.x, 0, normal.y).normalized()
+			travel += horizontal_push * 0.1
+			_ground_movement += horizontal_push
 			# null upwards movement
 			_upwards.y = 0.0
 		
-		var normal := collision.get_normal()
 		travel -= collision.get_travel()
 		
 		travel += normal * normal.dot(-travel) * reflect_factor
@@ -144,20 +144,20 @@ func _handle_movement(delta: float):
 		_ground.reset(basis)
 
 func _calc_ground_movement(delta: float):
-	if !_ground.is_grounded:
-		return _upwards
+	var control := pow(_ground.friction, 2.0) if _ground.is_grounded else _air_control
 	
 	## apply braking
-	var accel_input := _project_on_ground(-_ground_movement)
+	var accel_input := _project_on_ground(-_ground_movement) * control
 	
 	## apply accelerating
 	var input := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	if input.length_squared() > 1.0:
 		input = input.normalized()
+	input *= maxf(control, _air_control)
 	accel_input.x += input.x * _movement_speed
 	accel_input.z += input.y * _movement_speed
 	
-	accel_input *= pow(_ground.friction, 2) * _acceleration
+	accel_input *= _acceleration
 	
 	## apply gravity slide
 	if _upwards.y < 0.0:
