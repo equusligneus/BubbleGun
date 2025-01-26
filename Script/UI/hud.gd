@@ -16,7 +16,6 @@ func set_player(player: Gunner):
 	inventory.ammo_type_added.connect(_on_ammo_type_added)
 	inventory.ammo_selection_changed.connect(_on_ammo_type_selected)
 	player.add_child(self)
-	
 
 func _on_ammo_type_added(ammo: AmmoInstance):
 	var counter : AmmoCounter = ammo_counter_scene.instantiate()
